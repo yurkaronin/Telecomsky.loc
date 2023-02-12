@@ -1,3 +1,7 @@
-h1 {
-  color: green;
+.header__mobile-navigation .header__navigation-link {
+  padding: 24px 0;
+}
+.header__mobile-buttons .button {
+  max-width: 100%;
+  padding: 11px 16px;
 }

@@ -7,20 +7,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
   <!-- <base href="http://127.0.0.12:5500/"> -->
-  
+
   <!-- служебный css-класс необходим для реализации функционала динамического подключения стилевых файлов по заданным условиям в JS  -->
   <link class="connect-css-files" rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
 
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)" />
   <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)" />
   <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)" />
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)" />
   <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)" />
   <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)" />
 </head>
 
 <body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
 
-  <main>
+          <div class="header__phone">
+            <a href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="header__bottom">
+        <a href="#" class="header__logo">
+          <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
+        </a>
+
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="header__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="header__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="header__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+            <li>
+              <a class="header__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="header__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="header__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- мобильное меню  -->
+  <div class="header__mobile">
+    <div class="wrapper">
+      <div class="header__mobile-navigation"></div>
+      <div class="header__mobile-support">
+        <h3 class="header__mobile-title">Помощь</h3>
+        <div class="header__mobile-support-grid">
+          <ul>
+            <li>
+              <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li></li><a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="header__mobile-contact-flex">
+        <a class="header__mobile-phone" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="header__mobile-buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Написать нам</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Заказать звонок</span></a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- <main>
     <div class="wrapper">
       <ul class="list-reset">
         <li><a href="./home.html">Главная</a></li>
@@ -36,7 +154,7 @@
         <li><a href="./contacts.html">Контакты</a></li>
       </ul>
     </div>
-  </main>
+  </main> -->
 
   <script src="./libs/smoothscroll.min.js"></script>
   <script src="./js/scripts.js"></script>
