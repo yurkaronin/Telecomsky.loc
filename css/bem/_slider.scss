@@ -1,0 +1,15 @@
+.slider {
+  position: relative;
+
+  .button--slider {
+    position: absolute;
+    top: calc(50% - 48px);
+
+    &.prev {
+      left: 52px;
+    }
+    &.next {
+      right: 52px;
+    }
+  }
+}

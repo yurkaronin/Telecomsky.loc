@@ -72,6 +72,20 @@
   }
 }
 
+.hero {
+  .title {
+    font-size: 23px;
+
+    span {
+      font-size: 36px;
+    }
+  }
+  .title + .button {
+    margin-top: 16px;
+    padding: 11px 24px;
+}
+}
+
 .footer {
   padding: 32px 0 30px;
   &__grid {

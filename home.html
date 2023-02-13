@@ -8,12 +8,17 @@
   <title>Главная</title>
   <!-- <base href="http://127.0.0.12:5500/"> -->
 
-  <!-- служебный css-класс необходим для реализации функционала динамического подключения стилевых файлов по заданным условиям в JS  -->
-  <link class="connect-css-files" rel="stylesheet" href="./libs/normalize.min.css">
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
 
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)" />
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)" />
   <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)" />
   <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)" />
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)" />
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)" />
   <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)" />
   <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)" />
 </head>
@@ -22,30 +27,36 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__top">
-        <span class="header__city">Краснодар</span>
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
 
-        <div class="header__social">
-          <ul class="header__social-list">
-            <li class="header__social-item">
-              <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
-            </li>
-            <li class="header__social-item">
-              <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
-            </li>
-          </ul>
+          <div class="header__phone">
+            <a class="phone" href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
         </div>
 
-        <div class="header__support">
-          <a class="header__support-link"><span>Помощь</span></a>
-          <ul class="header__support-list">
-            <li><a href="#">Частые вопросы</a></li>
-            <li><a href="#">Инструкции</a></li>
-          </ul>
-        </div>
 
-        <div class="header__phone">
-          <a href="tel:+78005111205">+7 800 511 12 05</a>
-        </div>
 
       </div>
       <div class="header__bottom">
@@ -55,68 +66,255 @@
 
 
         <nav class="header__navigation">
-          <ul class="header__navigation-list">
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#"><span>Интернет</span></a>
+          <ul class="navigation-list">
+            <li>
+              <a href="#"><span>Интернет</span></a>
             </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#"><span>Телевидение</span></a>
+            <li>
+              <a href="#"><span>Телевидение</span></a>
             </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#"><span>Оборудование</span></a>
+            <li>
+              <a href="#"><span>Оборудование</span></a>
             </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#"><span>Акции</span></a>
+            <li>
+              <a href="#"><span>Акции</span></a>
             </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#"><span>О компании</span></a>
+            <li>
+              <a href="#"><span>О компании</span></a>
             </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#"><span>Контакты</span></a>
+            <li>
+              <a href="#"><span>Контакты</span></a>
             </li>
           </ul>
         </nav>
 
         <div class="header__buttons">
-          <ul class="list-reset">
-            <li>
-              <a class="button button--transparent" href="#"><span>Войти</span></a>
-            </li>
-            <li>
-              <a class="button" href="#"><span>Подключить Skytelecom</span></a>
-            </li>
-            <li>
-              <button class="button button--menu" type="button"><span>Меню</span></button>
-            </li>
-          </ul>
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
         </div>
 
       </div>
     </div>
-    <div class="header__mobile">
-      <!-- мобильное меню  -->
+  </header>
+  <!-- мобильное меню  -->
+  <div class="header__mobile">
+    <div class="wrapper">
       <div class="header__mobile-navigation"></div>
-      <h3>Помощь</h3>
-      <!-- навигация по поддержке пользователей  -->
-      <div class="header__mobile-support"></div>
-      <a href="tel:+78005111205">+7 800 511 12 05</a>
-      <ul class="list-reset">
-        <li>
-          <a class="button button--transparent" href="#"><span>Написать нам</span></a>
-        </li>
-        <li>
-          <a class="button" href="#"><span>Заказать звонок</span></a>
-        </li>
-      </ul>
+      <div class="header__mobile-support">
+        <h3 class="header__mobile-title">Помощь</h3>
+        <div class="header__mobile-support-grid">
+          <ul>
+            <li>
+              <a class="social-link header__social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="social-link header__social-link--telegram" href="#"><span>Написать Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li></li><a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="header__mobile-contact-flex">
+        <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="header__mobile-buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Написать нам</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Заказать звонок</span></a>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
 
-  </header>
+  </div>
 
   <main>
+    <!-- первый экран на главной  -->
+    <section class="hero hero--home">
+
+      <div class="hero__video">
+        <video autoplay controls="false" loop muted playsinline poster="./img/bg/hero.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="hero__content">
+          <h1 class="title">Интернет и ТВ в квартиру или частный дом
+            <span>от 450 руб/мес</span>
+          </h1>
+          <a href="#" class="button"><span>Подключить Skytelecom</span></a>
+
+          
+        </div>
+
+
+
+      </div>
+      <!-- слайдер со спец предложениями -->
+      <div class="slider slider-promo">
+        <div class="wrapper">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slider-promo__card">
+                  <div class="slider-promo__image">
+                    <img src="./img/promo-1.jpg" alt="фото акции" loading="lazy" width="264">
+                  </div>
+                  <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+                  <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+                  <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+                  <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-promo__card">
+                  <div class="slider-promo__image">
+                    <img src="./img/promo-2.jpg" alt="фото акции" loading="lazy" width="264">
+                  </div>
+                  <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+                  <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+                  <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+                  <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-promo__card">
+                  <div class="slider-promo__image">
+                    <img src="./img/promo-3.jpg" alt="фото акции" loading="lazy" width="264">
+                  </div>
+                  <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+                  <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+                  <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+                  <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-promo__card">
+                  <div class="slider-promo__image">
+                    <img src="./img/promo-1.jpg" alt="фото акции" loading="lazy" width="264">
+                  </div>
+                  <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+                  <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+                  <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+                  <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-promo__card">
+                  <div class="slider-promo__image">
+                    <img src="./img/promo-2.jpg" alt="фото акции" loading="lazy" width="264">
+                  </div>
+                  <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+                  <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+                  <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+                  <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <button class="button button--slider prev" type="button"></button>
+        <button class="button button--slider next" type="button"></button>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Помощь</h3>
+          <div class="footer__support-grid">
+            <ul>
+              <li>
+                <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              </li>
+              <li>
+                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Частые вопросы</a>
+              </li>
+              <li></li><a href="#">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+          <ul class="footer__buttons">
+            <li>
+              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span>Заказать звонок</span></a>
+            </li>
+          </ul>
+
+          <div class="footer__copyright">
+            <span>© Skytelecom 2022.</span> Создание сайта - <a href="https://very-good.ru/"
+              target="_blank">Very-good</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
   <script src="./libs/smoothscroll.min.js"></script>
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./js/scripts.js"></script>
 
 </body>

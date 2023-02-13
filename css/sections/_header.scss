@@ -2,9 +2,11 @@
   padding: 16px 0;
   border-bottom: 1px solid;
   border-color: #dcdcdf;
-  position: relative;
+  // position: relative;
   z-index: 99;
-  background-color: #ffffff;
+  background-color: rgba(#ffffff, 0.5);
+  position: fixed;
+  width: 100%;
 
   &__top {
     display: grid;

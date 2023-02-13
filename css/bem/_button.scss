@@ -25,6 +25,54 @@
     border-color: #ffffff;
     color: #ffffff;
   }
+  &--ghost {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #EF3024;
+  }
+  &--slider {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    max-width: 96px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 0;
+    font-size: 0;
+    z-index: 11;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 29px;
+      height: 52px;
+      background-image: url(../img/icons/slider-prev.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: 2;
+      pointer-events: none;
+    }
+    &.next::after {
+      background-image: url(../img/icons/slider-next.svg);
+    }
+
+    &:hover {
+      &::after {
+        background-image: url(../img/icons/slider-prev-white.svg);
+
+      }
+      &.next::after {
+        background-image: url(../img/icons/slider-next-white.svg);
+      }
+    }
+  }
 
   &:hover {
     border-color: #C70000;

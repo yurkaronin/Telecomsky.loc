@@ -1,0 +1,18 @@
+.button--slider {
+  width: 64px;
+  height: 64px;
+  top: calc(50% - 7px);
+  &::after {
+    width: 16px;
+    height: 32px;
+  }
+}
+
+.slider {
+  .button--slider.next {
+    right: 8px;
+  }
+  .button--slider.prev {
+    left: 8px;
+  }
+}

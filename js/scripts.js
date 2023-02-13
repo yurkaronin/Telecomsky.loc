@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // подключаем файлы тут
   includeFiles("./js/parts/navigation-copy.js");
-  includeFiles("./js/parts/connect-files.js");
   includeFiles("./js/parts/smoothscroll.js");
   includeFiles("./js/parts/yandex.map.js");
+  includeFiles("./js/parts/swiper-collection.js");
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку

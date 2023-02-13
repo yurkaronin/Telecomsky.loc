@@ -1,0 +1,58 @@
+.slider-promo {
+  // padding: 97px 0 120px;
+  margin-top: 10%;
+  &__card {
+    // max-width: 480px;
+    width: 100%;
+    background: #f7f8fb;
+    border-radius: 20px;
+    padding: 23px 24px 31px;
+
+    .button {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__image {
+    margin-bottom: 17px;
+    border-radius: 12px;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__data {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #4f5661;
+    margin-bottom: 7px;
+  }
+  &__title {
+    margin: 0;
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #28303d;
+  }
+  &__text {
+    margin: 0;
+    display: block;
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(#4f5661, 0.8);
+  }
+
+  &--minus {
+    margin-top: -59vh;
+  }
+  
+}

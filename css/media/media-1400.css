@@ -203,6 +203,13 @@
   font-size: 16px;
 }
 
+.hero .title {
+  font-size: 40px;
+}
+.hero .title span {
+  font-size: 56px;
+}
+
 .footer__grid {
   grid-template-columns: 1fr 1fr;
 }

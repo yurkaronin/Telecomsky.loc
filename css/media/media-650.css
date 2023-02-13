@@ -59,6 +59,17 @@
   margin-top: 111px;
 }
 
+.hero .title {
+  font-size: 23px;
+}
+.hero .title span {
+  font-size: 36px;
+}
+.hero .title + .button {
+  margin-top: 16px;
+  padding: 11px 24px;
+}
+
 .footer {
   padding: 32px 0 30px;
 }
