@@ -1,0 +1,6 @@
+.about {
+  &__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

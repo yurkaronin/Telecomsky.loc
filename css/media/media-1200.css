@@ -1,0 +1,8 @@
+.about__list {
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+.about__content {
+  grid-template-columns: 1fr;
+}

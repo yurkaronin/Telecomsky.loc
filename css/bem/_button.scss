@@ -74,6 +74,10 @@
     }
   }
 
+  &--center {
+    margin: 0 auto;
+  }
+
   &:hover {
     border-color: #C70000;
     background: #C70000;
