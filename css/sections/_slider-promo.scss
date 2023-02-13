@@ -54,5 +54,12 @@
   &--minus {
     margin-top: -59vh;
   }
+
+  .swiper + .button {
+    min-width: 224px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 15px 24px;
+  }
   
 }
