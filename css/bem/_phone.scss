@@ -1,0 +1,27 @@
+.phone {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(#28303d, 0.9);
+  max-width: max-content;
+  
+  &--icon {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 8px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgba(#28303d, 0.9);
+    position: relative;
+
+    &:before {
+      display: block;
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-image: url(../../img/icons/phone.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}

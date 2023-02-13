@@ -1,3 +1,9 @@
-h1 {
-  color: red;
+.footer__contacts {
+  flex-wrap: wrap;
+}
+.footer__copyright {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 32px;
+  display: block;
 }

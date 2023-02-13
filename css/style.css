@@ -167,6 +167,20 @@ input[type=radio].visually-hidden {
   max-width: max-content;
 }
 
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation-list a {
+  font-size: 16px;
+  color: #28303d;
+  transition: color 0.3s;
+}
+.navigation-list a:hover {
+  color: #c70000;
+}
+
 .wrapper {
   max-width: 1600px;
   padding: 0 48px;
@@ -199,14 +213,72 @@ input[type=radio].visually-hidden {
   max-width: max-content;
   transition: all 0.3s;
 }
+.button--transparent {
+  background-color: transparent;
+  color: #ef3024;
+}
+.button--white {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
 .button:hover {
   border-color: #C70000;
   background: #C70000;
   color: #ffffff;
 }
-.button--transparent {
-  background-color: transparent;
-  color: #ef3024;
+
+.social-link {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+  display: grid !important;
+  transition: color 0.3s;
+  align-items: center;
+  max-width: max-content;
+}
+.social-link::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/icons/whatsapp.svg);
+  background-repeat: no-repeat;
+}
+.social-link--telegram::before {
+  background-image: url(../img/icons/telegram.svg);
+}
+.social-link:hover {
+  color: rgba(199, 0, 0, 0.7);
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(40, 48, 61, 0.9);
+  max-width: max-content;
+}
+.phone--icon {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgba(40, 48, 61, 0.9);
+  position: relative;
+}
+.phone--icon:before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../../img/icons/phone.svg);
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -384,19 +456,8 @@ input[type=radio].visually-hidden {
   flex-grow: 2;
 }
 .header__navigation .navigation-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   align-items: center;
-}
-.header__navigation a {
-  font-size: 16px;
-  color: #28303d;
-  transition: color 0.3s;
-}
-.header__navigation a:hover {
-  color: #c70000;
 }
 .header__navigation li:not(:last-child) a {
   margin-right: 32px;
@@ -414,12 +475,93 @@ input[type=radio].visually-hidden {
 .header__mobile {
   display: none;
 }
+.header .phone {
+  font-size: 16px;
+}
 
 .hero {
   padding: 80px 0 100px;
 }
 
 .footer {
-  background-color: #28303D;
+  background-color: #28303d;
+  color: #ffffff;
+  padding: 38px 0 42px;
+}
+.footer .navigation-list a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+  max-width: max-content;
+}
+.footer__grid {
+  display: grid;
+  gap: 0 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+}
+.footer__navigation {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+.footer__support-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+.footer__support ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__support ul a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  display: block;
+}
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.footer .phone {
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: auto;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.footer .phone--icon:before {
+  background-image: url(../../img/icons/phone-white.svg);
+}
+.footer__buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+  margin-bottom: 20px;
+}
+.footer__buttons .button {
+  max-width: 100%;
+}
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: auto;
+  text-align: right;
+}
+.footer__copyright span {
+  margin-right: 32px;
+}
+.footer__copyright a {
   color: #ffffff;
 }

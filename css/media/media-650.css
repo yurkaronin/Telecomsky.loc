@@ -1,3 +1,7 @@
+.button {
+  padding: 12px 12px;
+}
+
 .header__buttons .button {
   display: none;
 }
@@ -53,4 +57,25 @@
 }
 .header__mobile {
   margin-top: 111px;
+}
+
+.footer {
+  padding: 32px 0 30px;
+}
+.footer__grid {
+  grid-template-columns: 1fr;
+}
+.footer__contacts {
+  grid-column: initial;
+}
+.footer__contacts {
+  display: block;
+  margin-top: 32px;
+}
+.footer .phone {
+  margin-right: initial;
+  margin-bottom: 20px;
+}
+.footer__buttons {
+  margin-right: initial !important;
 }

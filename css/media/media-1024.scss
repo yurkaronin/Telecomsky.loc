@@ -1,3 +1,14 @@
-h1 {
-  color: red;
+.footer {
+  &__contacts {
+    flex-wrap: wrap;
+  }
+  &__copyright {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 32px;
+    display: block;
+  }
+  // &__support ul a {
+  //   font-size: 14px;
+  // }
 }

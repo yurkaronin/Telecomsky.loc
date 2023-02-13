@@ -1,0 +1,13 @@
+.footer {
+  &__support-grid {
+    gap: 42px 16px;
+    grid-template-columns: 1fr;
+}
+&__copyright {
+  span {
+    margin-right: 0;
+    display: block;
+  }
+}
+
+}

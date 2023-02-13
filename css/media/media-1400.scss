@@ -84,6 +84,9 @@
     &.isActive {
       left: 0;
     }
+    .phone {
+      margin-right: 16px;
+    }
   }
 
   &__mobile-navigation {
@@ -112,7 +115,7 @@
         border-bottom: 1px solid;
         border-color: #dcdcdf;
         z-index: 5;
-  
+
         &:after {
           display: block;
           content: "";
@@ -131,18 +134,18 @@
           position: absolute;
           top: 0;
           bottom: 0;
-          left:  0;
-          right:  0;
+          left: 0;
+          right: 0;
           z-index: 0;
         }
         span {
           position: relative;
           z-index: 5;
         }
-  
+
         &:hover {
           border-color: transparent;
-  
+
           &:after {
             background-image: url(../../img/icons/menu-icon-clear.svg);
           }
@@ -156,7 +159,6 @@
         }
       }
     }
-    
   }
   &__mobile-title {
     margin: 0;
@@ -184,59 +186,24 @@
       font-size: 20px;
       line-height: 1;
       color: rgba(#28303d, 0.7);
-      transition: all 0.3s;
+      transition: color 0.3s;
       padding: 16px 0;
-      display: block;
-
       &:hover {
         color: rgba(#c70000, 0.7);
       }
     }
-    .header__social-link::after {
-      display: none;
-    }
-    .header__social-link {
-      grid-template-columns: 18px 1fr;
-      display: grid;
-    }
 
-    .header__social-link::before {
+    a:not([class]) {
       display: block;
-      content: "";
-      width: 18px;
-      height: 18px;
-      background-image: url(../../img/icons/whatsapp.svg);
-      background-repeat: no-repeat;
-    }
-    .header__social-link--telegram::before {
-      background-image: url(../../img/icons/telegram.svg);
     }
   }
+
   &__mobile-contact-flex {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
-  &__mobile-phone {
-    display: grid;
-    grid-template-columns: 18px 1fr;
-    gap: 8px;
-    align-items: center;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
-    color: rgba(#28303d, 0.9);
-    position: relative;
-    margin-right: 16px;
-    &:before {
-      display: block;
-      content: "";
-      width: 18px;
-      height: 18px;
-      background-image: url(../../img/icons/phone.svg);
-      background-repeat: no-repeat;
-    }
-  }
+
   &__mobile-buttons {
     list-style: none;
     padding: 0;
@@ -250,6 +217,47 @@
       width: 100%;
       padding: 11px 20px;
       font-size: 16px;
+    }
+  }
+}
+
+.footer {
+  &__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  &__contacts {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 0;
+    align-items: center;
+  }
+  .phone {
+    margin-left: initial;
+    text-align: initial;
+    margin-bottom: initial;
+    margin-right: 16px;
+  }
+  .footer__buttons {
+    margin-bottom: initial;
+    margin-right: 16px;
+  }
+
+  &__copyright {
+    margin-left: initial;
+    text-align: initial;
+    // span {
+    //   display: none;
+    // }
+  }
+  &__grid {
+    gap: 0 16px;
+  }
+  &__navigation {
+    gap: 16px;
+  }
+  &__support {
+    &-grid {
+      gap: 16px;
     }
   }
 }

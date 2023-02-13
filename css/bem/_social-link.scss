@@ -1,0 +1,29 @@
+.social-link {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+  display: grid !important;
+  transition: color 0.3s;
+  align-items: center;
+  max-width: max-content;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icons/whatsapp.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--telegram::before {
+    background-image: url(../img/icons/telegram.svg);
+  }
+
+  &:hover {
+    color: rgba(#c70000, 0.7);
+  }
+}

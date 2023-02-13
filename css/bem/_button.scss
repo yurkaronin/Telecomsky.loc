@@ -12,15 +12,23 @@
   border-color: #ef3024;
   max-width: max-content;
   transition: all 0.3s;
+  // span {
+  //   color: inherit;
+  // }
+
+  &--transparent {
+    background-color: transparent;
+    color: #ef3024;
+  }
+  &--white {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
 
   &:hover {
     border-color: #C70000;
     background: #C70000;
     color: #ffffff;
-  }
-
-  &--transparent {
-    background-color: transparent;
-    color: #ef3024;
   }
 }
