@@ -2,42 +2,18 @@
   padding: 12px 12px;
 }
 
-.header {
-  &__buttons {
-    .button {
-      display: none;
+// мобильное меню
+.mobile-nivigation {
+  padding-top: 111px;
 
-      &--menu {
-        display: flex;
-        margin-left: initial;
-      }
-    }
-  }
-  &__support {
-    display: none;
-  }
-  &__social {
-    display: none;
-  }
-  &__logo {
-    margin-right: initial;
-  }
-  &__top {
-    margin-bottom: 10px;
-  }
-  &__mobile {
-    padding-top: 0;
-  }
-  &__mobile-navigation {
-    .navigation-list {
-      grid-template-columns: 1fr;
-      margin-bottom: 26px;
-    }
+  .navigation-list {
+    grid-template-columns: 1fr;
+    margin-bottom: 26px;
 
-    .header__navigation-link {
+    a {
       font-size: 18px;
       padding: 9px 0;
-
+  
       &:after {
         width: 30px;
         height: 30px;
@@ -54,21 +30,21 @@
       }
     }
   }
-  &__mobile-title {
+
+  
+
+  &__title {
     font-size: 18px;
   }
-  &__mobile-support-grid a {
+  &__support-grid a {
     font-size: 16px;
   }
-  &__mobile-contact-flex {
+  &__contact-flex {
     .header__mobile-phone {
       width: 100%;
       max-width: 100%;
       margin-bottom: 22px;
     }
-  }
-  &__mobile {
-    margin-top: 111px;
   }
 }
 
@@ -83,7 +59,7 @@
   .title + .button {
     margin-top: 16px;
     padding: 11px 24px;
-}
+  }
 }
 
 .footer {

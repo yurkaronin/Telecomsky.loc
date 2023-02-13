@@ -2,61 +2,39 @@
   padding: 12px 12px;
 }
 
-.header__buttons .button {
-  display: none;
+.mobile-nivigation {
+  padding-top: 111px;
 }
-.header__buttons .button--menu {
-  display: flex;
-  margin-left: initial;
-}
-.header__support {
-  display: none;
-}
-.header__social {
-  display: none;
-}
-.header__logo {
-  margin-right: initial;
-}
-.header__top {
-  margin-bottom: 10px;
-}
-.header__mobile {
-  padding-top: 0;
-}
-.header__mobile-navigation .navigation-list {
+.mobile-nivigation .navigation-list {
   grid-template-columns: 1fr;
   margin-bottom: 26px;
 }
-.header__mobile-navigation .header__navigation-link {
+.mobile-nivigation .navigation-list a {
   font-size: 18px;
   padding: 9px 0;
 }
-.header__mobile-navigation .header__navigation-link:after {
+.mobile-nivigation .navigation-list a:after {
   width: 30px;
   height: 30px;
   background-size: contain;
 }
-.header__mobile-navigation .header__navigation-link:before {
+.mobile-nivigation .navigation-list a:before {
   border-radius: initial;
 }
-.header__mobile-navigation .header__navigation-link:hover::before {
+.mobile-nivigation .navigation-list a:hover::before {
   left: -20px;
   right: -20px;
 }
-.header__mobile-title {
+.mobile-nivigation__title {
   font-size: 18px;
 }
-.header__mobile-support-grid a {
+.mobile-nivigation__support-grid a {
   font-size: 16px;
 }
-.header__mobile-contact-flex .header__mobile-phone {
+.mobile-nivigation__contact-flex .header__mobile-phone {
   width: 100%;
   max-width: 100%;
   margin-bottom: 22px;
-}
-.header__mobile {
-  margin-top: 111px;
 }
 
 .hero .title {

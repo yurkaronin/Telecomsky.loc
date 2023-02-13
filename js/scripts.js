@@ -20,6 +20,13 @@ function headerChange() {
 // Основная рабочая область
 document.addEventListener("DOMContentLoaded", () => {
 
+  // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
+  headerChange();
+  // отслеживаем событие прокрутки страницы > модификация шапки
+  document.addEventListener('scroll', e => {
+    headerChange();
+  });
+
   // подключаем файлы тут
   includeFiles("./js/parts/navigation-copy.js");
   includeFiles("./js/parts/smoothscroll.js");

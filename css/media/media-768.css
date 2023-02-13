@@ -5,3 +5,25 @@
   max-width: 100%;
   padding: 11px 16px;
 }
+
+@media (max-width: 735px) {
+  .header__buttons .button {
+    display: none;
+  }
+  .header__buttons .button--menu {
+    display: flex;
+    margin-left: initial;
+  }
+  .header__support {
+    display: none;
+  }
+  .header__social {
+    display: none;
+  }
+  .header__logo {
+    margin-right: initial;
+  }
+  .header__top {
+    margin-bottom: 10px;
+  }
+}

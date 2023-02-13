@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)" />
-  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)" />
-  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)" />
-  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)" />
-  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)" />
-  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)" />
-  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)" />
-  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)">
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)">
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
+  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
 </head>
 
 <body>
@@ -98,33 +98,53 @@
     </div>
   </header>
   <!-- мобильное меню  -->
-  <div class="header__mobile">
+  <div class="mobile-nivigation">
     <div class="wrapper">
-      <div class="header__mobile-navigation"></div>
-      <div class="header__mobile-support">
-        <h3 class="header__mobile-title">Помощь</h3>
-        <div class="header__mobile-support-grid">
+      <ul class="navigation-list">
+        <li>
+          <a href="#"><span>Интернет</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Телевидение</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Оборудование</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Акции</span></a>
+        </li>
+        <li>
+          <a href="#"><span>О компании</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Контакты</span></a>
+        </li>
+      </ul>
+      <div class="mobile-nivigation__support">
+        <h3 class="mobile-nivigation__title">Помощь</h3>
+        <div class="mobile-nivigation__support-grid">
           <ul>
             <li>
-              <a class="social-link header__social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
             </li>
             <li>
-              <a class="social-link header__social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
             </li>
           </ul>
           <ul>
             <li>
               <a href="#">Частые вопросы</a>
             </li>
-            <li></li><a href="#">Инструкции</a>
+            <li>
+              <a href="#">Инструкции</a>
             </li>
           </ul>
 
         </div>
       </div>
-      <div class="header__mobile-contact-flex">
+      <div class="mobile-nivigation__contact-flex">
         <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
-        <ul class="header__mobile-buttons">
+        <ul class="mobile-nivigation__buttons">
           <li>
             <a class="button button--transparent" href="#"><span>Написать нам</span></a>
           </li>
@@ -133,10 +153,7 @@
           </li>
         </ul>
       </div>
-
-
     </div>
-
   </div>
 
   <main>

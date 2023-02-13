@@ -11,3 +11,30 @@
     }
   }
 }
+
+@media (max-width: 735px) {
+  .header {
+    &__buttons {
+      .button {
+        display: none;
+  
+        &--menu {
+          display: flex;
+          margin-left: initial;
+        }
+      }
+    }
+    &__support {
+      display: none;
+    }
+    &__social {
+      display: none;
+    }
+    &__logo {
+      margin-right: initial;
+    }
+    &__top {
+      margin-bottom: 10px;
+    }
+  }
+}

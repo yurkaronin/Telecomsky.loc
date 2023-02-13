@@ -188,6 +188,17 @@ input[type=radio].visually-hidden {
   color: #c70000;
 }
 
+.header-sticky .header {
+  background-color: #fff;
+  padding: 12px 0;
+}
+.header-sticky .header__top {
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .slider {
   position: relative;
 }
@@ -353,6 +364,7 @@ input[type=radio].visually-hidden {
   background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
   width: 100%;
+  transition: all 0.5s;
 }
 .header__top {
   display: grid;
@@ -360,6 +372,7 @@ input[type=radio].visually-hidden {
   gap: 32px;
   align-items: center;
   margin-bottom: 16px;
+  transition: all 0.5s;
 }
 .header__top-right {
   margin-left: auto;
