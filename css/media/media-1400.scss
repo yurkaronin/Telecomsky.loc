@@ -97,64 +97,66 @@
       grid-template-columns: 1fr 1fr;
       gap: 0 32px;
       margin-bottom: 32px;
-    }
-    .header__navigation-link {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 24px;
-      color: #28303d;
-      padding: 36px 0;
-      display: grid;
-      grid-template-columns: 1fr 48px;
-      gap: 16px;
-      align-items: center;
-      position: relative;
-      border-bottom: 1px solid;
-      border-color: #dcdcdf;
-      z-index: 5;
 
-      &:after {
-        display: block;
-        content: "";
-        width: 48px;
-        height: 48px;
-        background-image: url(../../img/icons/menu-icon.svg);
-        background-repeat: no-repeat;
-        z-index: 2;
-      }
-      &:before {
-        display: block;
-        content: "";
-        background-color: transparent;
-        border-radius: 20px;
-        transition: all 0.3s;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left:  0;
-        right:  0;
-        z-index: 0;
-      }
-      span {
+      a {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        color: #28303d;
+        padding: 36px 0;
+        display: grid;
+        grid-template-columns: 1fr 48px;
+        gap: 16px;
+        align-items: center;
         position: relative;
+        border-bottom: 1px solid;
+        border-color: #dcdcdf;
         z-index: 5;
-      }
-
-      &:hover {
-        border-color: transparent;
-
+  
         &:after {
-          background-image: url(../../img/icons/menu-icon-clear.svg);
+          display: block;
+          content: "";
+          width: 48px;
+          height: 48px;
+          background-image: url(../../img/icons/menu-icon.svg);
+          background-repeat: no-repeat;
+          z-index: 2;
         }
         &:before {
-          background-color: #d6f1ff;
-          top: -5px;
-          bottom: -5px;
-          left: -24px;
-          right: -24px;
+          display: block;
+          content: "";
+          background-color: transparent;
+          border-radius: 20px;
+          transition: all 0.3s;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left:  0;
+          right:  0;
+          z-index: 0;
+        }
+        span {
+          position: relative;
+          z-index: 5;
+        }
+  
+        &:hover {
+          border-color: transparent;
+  
+          &:after {
+            background-image: url(../../img/icons/menu-icon-clear.svg);
+          }
+          &:before {
+            background-color: #d6f1ff;
+            top: -5px;
+            bottom: -5px;
+            left: -24px;
+            right: -24px;
+          }
         }
       }
     }
+    
   }
   &__mobile-title {
     margin: 0;
