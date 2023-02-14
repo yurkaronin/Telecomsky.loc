@@ -1,0 +1,55 @@
+.filter {
+  margin-bottom: 32px;
+  &__flex {
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+  }
+  &__group {
+    margin: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background: #f7f8fb;
+    border-radius: 24px;
+    padding: 4px;
+    margin-right: 24px;
+  }
+  &__button {
+    display: block;
+    text-align: center;
+    padding: 12px 23px;
+    background: transparent;
+    border-radius: 24px;
+    color: #28303d;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    border: none;
+    max-width: max-content;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked + label {
+    background: #ef3024;
+    color: #ffffff;
+  }
+
+  &__group--mod {
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      height: 16px;
+      width: 1px;
+      background-color: #28303d;
+      position: absolute;
+      left: 50%;
+    }
+    input[type="radio"]:checked + label {
+      background: transparent;
+      color: #ef3024;
+    }
+  }
+}
