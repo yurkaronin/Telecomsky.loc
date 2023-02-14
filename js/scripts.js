@@ -27,6 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
     headerChange();
   });
 
+
+  // const swiperSlides = document.querySelectorAll('.rates__slider .rate-card');
+  // let maxHeight = 0;
+
+  // swiperSlides.forEach(slide => {
+  //   if (slide.clientHeight > maxHeight) {
+  //     maxHeight = slide.clientHeight;
+  //   }
+  // });
+
+  // swiperSlides.forEach(slide => {
+  //   slide.style.height = maxHeight + 'px';
+  // });
+
+
   // подключаем файлы тут
   includeFiles("./js/parts/navigation-copy.js");
   includeFiles("./js/parts/smoothscroll.js");

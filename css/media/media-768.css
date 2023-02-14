@@ -6,6 +6,25 @@
   padding: 11px 16px;
 }
 
+@media (max-width: 760px) {
+  .filter__flex {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 750px) {
+  .rate-card__decorate {
+    font-size: 30px;
+    gap: 12px;
+  }
+  .rate-card__title:after {
+    width: 40px;
+    height: 40px;
+  }
+  .rate-card {
+    padding: 21px 20px 20px;
+  }
+}
 @media (max-width: 735px) {
   .header__buttons .button {
     display: none;

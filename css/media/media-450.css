@@ -6,3 +6,10 @@
   margin-right: 0;
   display: block;
 }
+
+.filter__group--mod .filter__button {
+  padding: 12px 16px;
+}
+.filter .button--fatty {
+  padding: 11px 59px;
+}

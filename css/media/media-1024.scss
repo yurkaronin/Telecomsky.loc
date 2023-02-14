@@ -9,3 +9,17 @@
     display: block;
   }
 }
+
+@media (max-width: 1023px) {
+  .filter__flex {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+  .filter__group {
+    margin: initial;
+    max-width: max-content;
+  }
+
+}

@@ -2,7 +2,7 @@
   display: block;
   text-align: center;
   padding: 12px 24px;
-  background: #ef3024;
+  background-color: #ef3024;
   border-radius: 24px;
   color: #ffffff;
   font-weight: 400;
@@ -77,10 +77,18 @@
   &--center {
     margin: 0 auto;
   }
+  &--fatty {
+    padding: 15px 59px;
+  }
+  &--white-mod {
+    background-color: #ffffff;
+    color: #EF3024;
+    border-color: #ffffff;
+  }
 
   &:hover {
     border-color: #C70000;
-    background: #C70000;
+    background-color: #C70000;
     color: #ffffff;
   }
 }

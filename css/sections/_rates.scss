@@ -1,0 +1,183 @@
+.rates {
+
+}
+
+.filter {
+  margin-bottom: 32px;
+  &__flex {
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+  }
+  &__group {
+    margin: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background: #f7f8fb;
+    border-radius: 24px;
+    padding: 4px;
+    margin-right: 24px;
+  }
+  &__button {
+    display: block;
+    text-align: center;
+    padding: 12px 23px;
+    background: transparent;
+    border-radius: 24px;
+    color: #28303d;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    border: none;
+    max-width: max-content;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked + label {
+    background: #ef3024;
+    color: #ffffff;
+  }
+
+  &__group--mod {
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      height: 16px;
+      width: 1px;
+      background-color: #28303d;
+      position: absolute;
+      left: 50%;
+    }
+    input[type="radio"]:checked + label {
+      background: transparent;
+      color: #ef3024;
+    }
+  }
+}
+
+.rate-card {
+  background-color: #d6f1ff;
+  border-radius: 20px;
+  padding: 30px 24px 24px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+
+  &--two {
+    background-color: #CED9FB;
+  }
+  &--three {
+    background-color: #DCD4F9;
+  }
+  &--four {
+    background-color: #F4D0D8;
+  }
+
+  &__title {
+    margin: 0;
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    grid-template-columns: 1fr 48px;
+    position: relative;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    color: #28303d;
+    transition: all 0.3s;
+    &:after {
+      display: block;
+      content: "";
+      width: 48px;
+      height: 48px;
+      background-image: url(../../img/icons/rates-arrow.svg);
+      background-repeat: no-repeat;
+      transition: all 0.3s;
+      background-size: contain;
+    }
+    &:hover {
+      color: #070e2b;
+
+      &:after {
+        background-image: url(../../img/icons/rates-arrow--hover.svg);
+      }
+    }
+    
+  }
+
+  &__decorate {
+    font-weight: 300;
+    font-size: 32px;
+    color: #28303d;
+    margin: 0;
+    margin-bottom: 12px;
+    display: grid;
+    gap: 24px;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-image: url(../../img/icons/speed.svg);
+      background-repeat: no-repeat;
+      transition: all 0.3s;
+      background-size: contain;
+    }
+    &--channels {
+      &::before {
+        background-image: url(../../img/icons/channels.svg);
+        
+      }
+    }
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(#28303d, 0.7);
+    margin: 0;
+    margin-bottom: 21px;
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+  &__bottom {
+    border-top: 1px solid;
+    border-color: rgba(#28303d, 0.2);
+    padding-top: 16px;
+    margin-top: auto;
+  }
+  &__price {
+    display: block;
+    font-weight: 500;
+    font-size: 32px;
+    color: #28303d;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    background-color: #bee3f8;
+  }
+  &--two:hover {
+    background-color: #B4C4F5;
+  }
+  &--three:hover {
+    background-color: #C9BCF7;
+  }
+  &--four:hover {
+    background-color: #F5BECA;
+  }
+
+  .button--white-mod {
+    max-width: 100%;
+  }
+}

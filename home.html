@@ -164,7 +164,7 @@
     <!-- первый экран на главной  -->
     <section class="hero hero--home">
       <div class="hero__video">
-        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg" loading="lazy">
+        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg">
           <source src="./video/hero.mp4" type="video/mp4">
         </video>
       </div>
@@ -255,6 +255,123 @@
         <button class="button button--slider next" type="button"></button>
       </div>
     </section>
+    <!-- Наши тарифы  -->
+    <section class="rates">
+
+      <div class="wrapper">
+        <h2 class="title">Наши тарифы</h2>
+        <div class="filter">
+          <form action="">
+            <div class="filter__flex">
+              <fieldset class="filter__group">
+                <legend class="visually-hidden">Место</legend>
+                <input class="visually-hidden" type="radio" name="place-option" id="filter-place-apartment"
+                  value="Для квартиры" checked>
+                <label class="filter__button" for="filter-place-apartment">Для квартиры</label>
+
+                <input class="visually-hidden" type="radio" name="place-option" id="filter-place-home" value="Для дома">
+                <label class="filter__button" for="filter-place-home">Для дома</label>
+              </fieldset>
+
+              <fieldset class="filter__group filter__group--mod">
+                <legend class="visually-hidden">Телевидение</legend>
+                <input class="visually-hidden" type="radio" name="television-option" id="filter-television-off"
+                  value="Без телевидения" checked>
+                <label class="filter__button" for="filter-television-off">Без телевидения</label>
+
+                <input class="visually-hidden" type="radio" name="television-option" id="filter-television-on"
+                  value="С телевидением">
+                <label class="filter__button" for="filter-television-on">С телевидением</label>
+              </fieldset>
+
+              <a href="#" class="button button--fatty"><span>Смотреть все</span></a>
+
+            </div>
+          </form>
+
+          
+        </div>
+      </div>
+
+      <!-- слайдер со спец предложениями -->
+      <div class="rates__slider slider">
+        <div class="wrapper">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="rate-card" href="#">
+                  <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
+                  <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                  <ul class="rate-card__list">
+                    <li>Для 2-5 устройств</li>
+                    <li>Скорость скачивания 12,5 Мбит/сек</li>
+                  </ul>
+                  <div class="rate-card__bottom">
+                    <span class="rate-card__price">450 руб/мес</span>
+                    <div class="button button--white-mod"><span>Подключить</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rate-card rate-card--two" href="#">
+                  <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
+                  <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                  <ul class="rate-card__list">
+                    <li>Для 2-5 устройств</li>
+                    <li>Скорость скачивания 12,5 Мбит/сек</li>
+                  </ul>
+                  <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                  <div class="rate-card__bottom">
+                    <span class="rate-card__price">600 руб/мес</span>
+                    <div class="button button--white-mod"><span>Подключить</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rate-card rate-card--three" href="#">
+                  <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
+                  <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                  <ul class="rate-card__list">
+                    <li>Для 2-5 устройств</li>
+                    <li>Скорость скачивания 12,5 Мбит/сек</li>
+                  </ul>
+                  <div class="rate-card__bottom">
+                    <span class="rate-card__price">650 руб/мес</span>
+                    <div class="button button--white-mod"><span>Подключить</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rate-card rate-card--four" href="#">
+                  <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
+                  <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                  <ul class="rate-card__list">
+                    <li>Для 2-5 устройств</li>
+                    <li>Скорость скачивания 12,5 Мбит/сек</li>
+                  </ul>
+                  <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                  <div class="rate-card__bottom">
+                    <span class="rate-card__price">850 руб/мес</span>
+                    <div class="button button--white-mod"><span>Подключить</span></div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <button class="button button--slider prev" type="button"></button>
+        <button class="button button--slider next" type="button"></button>
+      </div>
+
+    </section>
 
     <!-- о компании  -->
     <section class="about">
@@ -295,11 +412,23 @@
         </ul>
         <div class="about__content">
           <div class="left">
-            <p>Оператор связи SkyTelecom специализируется на оказании услуг широкополосного доступа в сеть интернет для корпоративных клиентов. В зависимости от ваших потребностей в скорости и объеме передачи данных, а так же местоположения офиса мы подберем для вас наиболее оптимальный способ подключения к сети интернет.</p>
-            <p>Мы подключаем офисы и целые бизнес-центры к сети интернет на всей территории г. Краснодара. Компания SkyTelecom владеет собственной оптоволоконной сетью, осуществляет оперативное подключение к сети интернет по технологии FTTB (Fiber to the Building), имеет большой опыт реализации сложных комплексных проектов с учетом всех потребностей заказчика.</p>
+            <p>Оператор связи SkyTelecom специализируется на оказании услуг широкополосного доступа в сеть интернет для
+              корпоративных клиентов. В зависимости от ваших потребностей в скорости и объеме передачи данных, а так же
+              местоположения офиса мы подберем для вас наиболее оптимальный способ подключения к сети интернет.</p>
+            <p>Мы подключаем офисы и целые бизнес-центры к сети интернет на всей территории г. Краснодара. Компания
+              SkyTelecom владеет собственной оптоволоконной сетью, осуществляет оперативное подключение к сети интернет
+              по технологии FTTB (Fiber to the Building), имеет большой опыт реализации сложных комплексных проектов с
+              учетом всех потребностей заказчика.</p>
           </div>
           <div class="right">
-            <p>Оператор связи SkyTelecom специализируется на оказании услуг широкополосного доступа в сеть интернет для корпоративных клиентов. В зависимости от ваших потребностей в скорости и объеме передачи данных, а так же местоположения офиса мы подберем для вас наиболее оптимальный способ подключения к сети интернет. Мы подключаем офисы и целые бизнес-центры к сети интернет на всей территории г. Краснодара. Компания SkyTelecom владеет собственной оптоволоконной сетью, осуществляет оперативное подключение к сети интернет по технологии FTTB (Fiber to the Building), имеет большой опыт реализации сложных комплексных проектов с учетом всех потребностей заказчика. Оператор связи SkyTelecom специализируется на оказании услуг широкополосного доступа.
+            <p>Оператор связи SkyTelecom специализируется на оказании услуг широкополосного доступа в сеть интернет для
+              корпоративных клиентов. В зависимости от ваших потребностей в скорости и объеме передачи данных, а так же
+              местоположения офиса мы подберем для вас наиболее оптимальный способ подключения к сети интернет. Мы
+              подключаем офисы и целые бизнес-центры к сети интернет на всей территории г. Краснодара. Компания
+              SkyTelecom владеет собственной оптоволоконной сетью, осуществляет оперативное подключение к сети интернет
+              по технологии FTTB (Fiber to the Building), имеет большой опыт реализации сложных комплексных проектов с
+              учетом всех потребностей заказчика. Оператор связи SkyTelecom специализируется на оказании услуг
+              широкополосного доступа.
             </p>
           </div>
         </div>

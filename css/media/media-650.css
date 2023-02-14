@@ -68,3 +68,10 @@
 .footer__buttons {
   margin-right: initial !important;
 }
+
+@media (max-width: 600px) {
+  .button--slider {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
