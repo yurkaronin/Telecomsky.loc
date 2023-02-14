@@ -11,13 +11,26 @@
     }
   }
 }
+.promo {
+  &__grid {
+    padding: 0 40px 40px 40px;
+    grid-template-columns: 1fr;
+  }
+  &__image {
+    margin-left: initial;
+    margin: 0 auto;
+}
+&__title {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+}
 
 @media (max-width: 760px) {
   .filter__flex {
     display: grid;
     grid-template-columns: auto;
   }
-
 }
 
 @media (max-width: 750px) {

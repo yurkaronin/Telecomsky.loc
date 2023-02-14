@@ -8,6 +8,21 @@
   display: block;
 }
 
+.promo {
+  padding: 45px 0 65px;
+}
+.promo__form {
+  grid-template-columns: 1fr;
+}
+.promo__form-item--check {
+  grid-column: initial;
+}
+.promo .button {
+  grid-column: initial;
+  width: 100%;
+  max-width: 100%;
+}
+
 @media (max-width: 1023px) {
   .filter__flex {
     display: grid;

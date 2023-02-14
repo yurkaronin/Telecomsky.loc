@@ -13,3 +13,10 @@
 .filter .button--fatty {
   padding: 11px 59px;
 }
+
+.promo__grid {
+  padding-bottom: 20px;
+}
+.promo__form-item--check label {
+  font-size: 15px;
+}

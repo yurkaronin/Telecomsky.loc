@@ -6,6 +6,19 @@
   padding: 11px 16px;
 }
 
+.promo__grid {
+  padding: 0 40px 40px 40px;
+  grid-template-columns: 1fr;
+}
+.promo__image {
+  margin-left: initial;
+  margin: 0 auto;
+}
+.promo__title {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+
 @media (max-width: 760px) {
   .filter__flex {
     display: grid;
