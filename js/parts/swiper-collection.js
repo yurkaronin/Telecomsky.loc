@@ -1,3 +1,4 @@
+// слайдер со спец предложениями 
 const swiper = new Swiper(".slider-promo .swiper", {
   slidesPerView: 3,
   spaceBetween: 32,
@@ -6,46 +7,68 @@ const swiper = new Swiper(".slider-promo .swiper", {
     prevEl: ".slider-promo .button--slider.prev",
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1.1,
       spaceBetween: 10,
     },
-    // when window width is >= 480px
     600: {
       slidesPerView: 2,
     },
-    // when window width is >= 640px
     1200: {
       slidesPerView: 3,
     }
   }
 });
-
-const swiper2 = new Swiper(".rates__slider .swiper", {
+// Наши тарифы 
+const swiper2 = new Swiper(".rates .swiper", {
   slidesPerView: 4,
   spaceBetween: 32,
   calculateHeight:true,
   navigation: {
-    nextEl: ".rates__slider .button--slider.next",
-    prevEl: ".rates__slider .button--slider.prev",
+    nextEl: ".rates .button--slider.next",
+    prevEl: ".rates .button--slider.prev",
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1.1,
       spaceBetween: 10,
     },
-    // when window width is >= 480px
     600: {
       slidesPerView: 2,
     },
-    // when window width is >= 640px
     1200: {
       slidesPerView: 3,
     },
     1600: {
       slidesPerView: 4,
+    }
+  }
+});
+// Оборудование
+const swiper3 = new Swiper(".equip .swiper", {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  calculateHeight:true,
+  navigation: {
+    nextEl: ".equip .button--slider.next",
+    prevEl: ".equip .button--slider.prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    1600: {
+      slidesPerView: 4,
+      spaceBetween: 32,
     }
   }
 });
