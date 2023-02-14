@@ -1011,7 +1011,10 @@ input[type=radio].visually-hidden {
   background: #d6effb;
   border-radius: 20px;
   overflow: hidden;
-  padding: 25px 0;
+  padding: 0 25px;
+}
+.promo--two {
+  background: #DCD4F9;
 }
 .promo__grid {
   display: grid;

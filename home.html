@@ -150,10 +150,10 @@
         <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
         <ul class="mobile-nivigation__buttons">
           <li>
-            <a class="button button--transparent" href="#"><span>Написать нам</span></a>
+            <a class="button button--transparent" href="#"><span>Вход</span></a>
           </li>
           <li>
-            <a class="button" href="#"><span>Заказать звонок</span></a>
+            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
           </li>
         </ul>
       </div>
@@ -396,10 +396,9 @@
                   <input type="checkbox" name="user-consent" id="promo-form-consent" checked>
                   <label for="promo-form-consent">Я согласен с условиями обработки <a href="#"
                       target="_blank">персональных данных</a></label>
-                  </label>
                 </div>
 
-                <a href="#" class="button" type="submit"><span>Отправить</span></a>
+                <button class="button" type="submit"><span>Отправить</span></button>
               </div>
             </form>
           </div>
@@ -531,9 +530,42 @@
         <button class="button button--slider prev" type="button"></button>
         <button class="button button--slider next" type="button"></button>
       </div>
-
     </section>
+    <!-- Помощь в выборе оборудования  -->
+    <div class="wrapper">
+      <article class="promo promo--two">
+        <div class="promo__grid">
+          <div class="promo__image">
+            <img src="./img/promo/2.png" alt="роутер" width="480" loading="lazy">
+          </div>
+          <div class="promo__details">
+            <h2 class="promo__title">Помощь в выборе оборудования</h2>
+            <form action="">
+              <div class="promo__form">
 
+                <div class="promo__form-item">
+                  <label for="promo-form-name-2">Ваш телефон:</label>
+                  <input id="promo-form-name-2" type="text" name="user-phone-2" placeholder="Введите телефон">
+                </div>
+
+                <div class="promo__form-item">
+                  <label for="promo-form-tel-2">Представьтесь, пожалуйста:</label>
+                  <input id="promo-form-tel-2" type="text" name="username-2" placeholder="Введите имя">
+                </div>
+
+                <div class="promo__form-item promo__form-item--check">
+                  <input type="checkbox" name="user-consent-2" id="promo-form-consent-2" checked>
+                  <label for="promo-form-consent-2">Я согласен с условиями обработки <a href="#"
+                      target="_blank">персональных данных</a></label>
+                </div>
+
+                <button class="button" type="submit"><span>Отправить</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
+    </div>
     <!-- о компании  -->
     <section class="about">
       <div class="wrapper">
@@ -598,6 +630,7 @@
 
       </div>
     </section>
+
 
   </main>
 

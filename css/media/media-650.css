@@ -82,4 +82,13 @@
     opacity: 0;
     pointer-events: none;
   }
+  .mobile-nivigation__contact-flex {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto;
+    justify-content: flex-start;
+  }
+  .mobile-nivigation__buttons .button {
+    padding: 11px 20px;
+  }
 }
