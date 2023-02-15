@@ -160,7 +160,7 @@
     </div>
   </div>
 
-  <main>
+  <main class="main">
     <!-- первый экран на главной  -->
     <section class="hero hero--home">
       <div class="hero__video">
@@ -255,47 +255,47 @@
         <button class="button button--slider next" type="button"></button>
       </div>
     </section>
-    <!-- Наши тарифы  -->
-    <section class="rates">
+    <!-- фильтр  -->
+    <section class="filter section">
       <div class="wrapper">
         <h2 class="title">Наши тарифы</h2>
-        <div class="filter">
-          <form action="">
-            <div class="filter__flex">
-              <fieldset class="filter__group">
-                <legend class="visually-hidden">Место</legend>
-                <input class="visually-hidden" type="radio" name="place-option" id="filter-place-apartment"
-                  value="Для квартиры" checked>
-                <label class="filter__button" for="filter-place-apartment">Для квартиры</label>
 
-                <input class="visually-hidden" type="radio" name="place-option" id="filter-place-home" value="Для дома">
-                <label class="filter__button" for="filter-place-home">Для дома</label>
-              </fieldset>
+        <form action="">
+          <div class="filter__flex">
+            <fieldset class="filter__group">
+              <legend class="visually-hidden">Место</legend>
+              <input class="visually-hidden" type="radio" name="place-option" id="filter-place-apartment"
+                value="Для квартиры" checked>
+              <label class="filter__button" for="filter-place-apartment">Для квартиры</label>
 
-              <fieldset class="filter__group filter__group--mod">
-                <legend class="visually-hidden">Телевидение</legend>
-                <input class="visually-hidden" type="radio" name="television-option" id="filter-television-off"
-                  value="Без телевидения" checked>
-                <label class="filter__button" for="filter-television-off">Без телевидения</label>
+              <input class="visually-hidden" type="radio" name="place-option" id="filter-place-home" value="Для дома">
+              <label class="filter__button" for="filter-place-home">Для дома</label>
+            </fieldset>
 
-                <input class="visually-hidden" type="radio" name="television-option" id="filter-television-on"
-                  value="С телевидением">
-                <label class="filter__button" for="filter-television-on">С телевидением</label>
-              </fieldset>
+            <fieldset class="filter__group filter__group--mod">
+              <legend class="visually-hidden">Телевидение</legend>
+              <input class="visually-hidden" type="radio" name="television-option" id="filter-television-off"
+                value="Без телевидения" checked>
+              <label class="filter__button" for="filter-television-off">Без телевидения</label>
 
-              <a href="#" class="button button--fatty"><span>Смотреть все</span></a>
+              <input class="visually-hidden" type="radio" name="television-option" id="filter-television-on"
+                value="С телевидением">
+              <label class="filter__button" for="filter-television-on">С телевидением</label>
+            </fieldset>
 
-            </div>
-          </form>
+            <a href="#" class="button button--fatty"><span>Смотреть все</span></a>
 
+          </div>
+        </form>
 
-        </div>
       </div>
-      <!-- слайдер со спец предложениями -->
+    </section>
+    <!-- Наши тарифы  -->
+    <section class="rates">
       <div class="slider">
         <div class="wrapper">
           <div class="swiper">
-            <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
@@ -364,15 +364,13 @@
           </div>
         </div>
 
-        <!-- If we need navigation buttons -->
         <button class="button button--slider prev" type="button"></button>
         <button class="button button--slider next" type="button"></button>
       </div>
-
     </section>
     <!-- Подключить интернет  -->
-    <div class="wrapper">
-      <article class="promo promo--one">
+    <article class="promo promo--one section">
+      <div class="wrapper">
         <div class="promo__grid">
           <div class="promo__image">
             <img src="./img/promo/1.png" alt="роутер" width="480" loading="lazy">
@@ -403,39 +401,41 @@
             </form>
           </div>
         </div>
-      </article>
-    </div>
-    <!-- Оборудование  -->
-    <section class="equip">
+      </div>
+
+    </article>
+    <!-- фильтр  -->
+    <section class="filter section">
       <div class="wrapper">
         <h2 class="title">Оборудование</h2>
-        <div class="filter">
-          <form action="">
-            <div class="filter__flex">
-              <fieldset class="filter__group">
-                <legend class="visually-hidden">Виды оборудования</legend>
-                <input class="visually-hidden" type="radio" name="equip-option" id="filter-equip-router"
-                  value="Wi-Fi роутеры" checked>
-                <label class="filter__button" for="filter-equip-router">Wi-Fi роутеры</label>
+        <form action="">
+          <div class="filter__flex">
+            <fieldset class="filter__group">
+              <legend class="visually-hidden">Виды оборудования</legend>
+              <input class="visually-hidden" type="radio" name="equip-option" id="filter-equip-router"
+                value="Wi-Fi роутеры" checked>
+              <label class="filter__button" for="filter-equip-router">Wi-Fi роутеры</label>
 
-                <input class="visually-hidden" type="radio" name="equip-option" id="filter-equip-boxes"
-                  value="ТВ-приставки">
-                <label class="filter__button" for="filter-equip-boxes">ТВ-приставки</label>
-              </fieldset>
+              <input class="visually-hidden" type="radio" name="equip-option" id="filter-equip-boxes"
+                value="ТВ-приставки">
+              <label class="filter__button" for="filter-equip-boxes">ТВ-приставки</label>
+            </fieldset>
 
-              <a href="#" class="button button--fatty"><span>Смотреть все</span></a>
+            <a href="#" class="button button--fatty"><span>Смотреть все</span></a>
 
-            </div>
-          </form>
+          </div>
+        </form>
 
-
-        </div>
       </div>
-      <!-- слайдер c оборудованием -->
+    </section>
+
+    <!-- Оборудование  -->
+    <section class="equip">
+
       <div class="slider">
         <div class="wrapper">
           <div class="swiper">
-            <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
@@ -531,10 +531,11 @@
         <button class="button button--slider next" type="button"></button>
       </div>
     </section>
+
     <!-- Помощь в выборе оборудования  -->
-    <div class="wrapper">
-      <article class="promo promo--two">
-        <div class="promo__grid">
+    <article class="promo section">
+      <div class="wrapper">
+        <div class="promo__grid promo__grid--two">
           <div class="promo__image">
             <img src="./img/promo/2.png" alt="роутер" width="480" loading="lazy">
           </div>
@@ -564,8 +565,9 @@
             </form>
           </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
+
     <!-- о компании  -->
     <section class="about">
       <div class="wrapper">
@@ -630,7 +632,6 @@
 
       </div>
     </section>
-
 
   </main>
 

@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 32px;
-    margin-bottom: 38px;
   }
   &__image {
     margin-bottom: 19px;
@@ -57,4 +56,8 @@
       padding: 12px 65px;
     }
   }
+}
+
+.about__list + .about__content {
+  margin-top: 38px;
 }

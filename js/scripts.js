@@ -20,6 +20,8 @@ function headerChange() {
 // Основная рабочая область
 document.addEventListener("DOMContentLoaded", () => {
 
+
+
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
   headerChange();
   // отслеживаем событие прокрутки страницы > модификация шапки
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/smoothscroll.js");
   includeFiles("./js/parts/yandex.map.js");
   includeFiles("./js/parts/swiper-collection.js");
+  includeFiles("./js/parts/faqlist.js");
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку

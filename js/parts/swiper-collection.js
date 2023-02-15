@@ -2,6 +2,7 @@
 const swiper = new Swiper(".slider-promo .swiper", {
   slidesPerView: 3,
   spaceBetween: 32,
+  // autoHeight: true,
   navigation: {
     nextEl: ".slider-promo .button--slider.next",
     prevEl: ".slider-promo .button--slider.prev",
@@ -23,7 +24,8 @@ const swiper = new Swiper(".slider-promo .swiper", {
 const swiper2 = new Swiper(".rates .swiper", {
   slidesPerView: 4,
   spaceBetween: 32,
-  calculateHeight:true,
+  // calculateHeight:true,
+  // autoHeight: true,
   navigation: {
     nextEl: ".rates .button--slider.next",
     prevEl: ".rates .button--slider.prev",
@@ -48,7 +50,8 @@ const swiper2 = new Swiper(".rates .swiper", {
 const swiper3 = new Swiper(".equip .swiper", {
   slidesPerView: 4,
   spaceBetween: 32,
-  calculateHeight:true,
+  // calculateHeight:true,
+  // autoHeight: true,
   navigation: {
     nextEl: ".equip .button--slider.next",
     prevEl: ".equip .button--slider.prev",

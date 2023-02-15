@@ -1,0 +1,11 @@
+.subtitle {
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(#4f5661, 0.7);
+}
+
+.title + .subtitle {
+  margin-top: 21px;
+}
