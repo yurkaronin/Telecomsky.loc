@@ -220,6 +220,9 @@ input[type=radio].visually-hidden {
   right: 52px;
 }
 
+.filter {
+  margin-bottom: 32px;
+}
 .filter__flex {
   display: flex;
   align-items: center;
@@ -1034,9 +1037,6 @@ input[type=radio].visually-hidden {
   margin-top: 38px;
 }
 
-.rates .filter {
-  margin: 0;
-}
 .rates .title {
   margin-bottom: 0;
   color: #28303D;
