@@ -1,0 +1,14 @@
+.checkbox-button {
+  input[type="checkbox"]:checked + .button {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #f44336;
+  }
+  label {
+    cursor: pointer;
+
+    span {
+      pointer-events: none;
+    }
+  }
+}

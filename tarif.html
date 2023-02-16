@@ -6,53 +6,497 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тариф</title>
+  <!-- <base href="http://127.0.0.12:5500/"> -->
 
-  <link rel="stylesheet" href="libs/normalize.min.css">
-  <!-- содержит условие подключения файла со стилями для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    if (document.querySelector('.swiper')) {
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "libs/swiper-bundle.min.css";
-      document.head.appendChild(link);
-    }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="stylesheet" href="css/media/media-1024.css" media="screen and (max-width: 1024px)" />
-  <link rel="stylesheet" href="css/media/media-768.css" media="screen and (max-width: 768px)" />
-  <link rel="stylesheet" href="css/media/media-375.css" media="screen and (max-width: 375px)" />
-  <link rel="stylesheet" href="css/media/media-320.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)">
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="./css/media/media-1200.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)">
+  <link rel="stylesheet" href="./css/media/media-550.css" media="screen and (max-width: 550px)">
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
+  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
 </head>
 
 <body>
+  <!-- Шапка  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
 
-  <main>
-    <h1>Тариф</h1>
+          <div class="header__phone">
+            <a class="phone" href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
+        </div>
 
-    
+
+
+      </div>
+      <div class="header__bottom">
+        <a href="/" class="header__logo">
+          <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
+        </a>
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Оборудование</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- мобильное меню  -->
+  <div class="mobile-nivigation">
+    <div class="wrapper">
+      <ul class="navigation-list">
+        <li>
+          <a href="#"><span>Интернет</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Телевидение</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Оборудование</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Акции</span></a>
+        </li>
+        <li>
+          <a href="#"><span>О компании</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Контакты</span></a>
+        </li>
+      </ul>
+      <div class="mobile-nivigation__support">
+        <h3 class="mobile-nivigation__title">Помощь</h3>
+        <div class="mobile-nivigation__support-grid">
+          <ul>
+            <li>
+              <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li>
+              <a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="mobile-nivigation__contact-flex">
+        <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="mobile-nivigation__buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Вход</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Основной контент  -->
+  <main class="main">
+
+    <!-- первый экран на главной  -->
+    <section class="hero hero--inner">
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="hero__content hero__content--mod">
+          <h1 class="title">Тариф Sky home TV 300 <span>850 руб/мес</span></span></h1>
+          <div class="hero__buttons-grid">
+            <a href="#" class="button"><span>Подключить</span></a>
+            <a href="#" class="button button--clear"><span>Назад к списку</span></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="tarif-details section">
+      <h2 class="visually-hidden">Подробная информация по тарифному плану</h2>
+      <div class="wrapper">
+        <!-- Сетка блока  -->
+        <div class="tarif-details__grid">
+
+          <!-- информация по тарифу  -->
+          <div class="tarif-details__grid-content">
+
+            <!-- группа -->
+            <div class="tarif-details__group">
+              <h3 class="title">В тариф включено</h3>
+              <!-- список опций  -->
+              <ul class="tarif-details__list">
+                <li>
+                  <a class="tariff-long-item" href="#">
+                    <div class="tariff-long-item__picture">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="39" fill="none">
+                        <path stroke="#EF3024" stroke-miterlimit="10" stroke-width="2"
+                          d="M34.739 5.729C39.155 9.149 42 14.583 42 20.639H31.731c0-2.596-1.084-4.801-2.802-6.353l5.81-8.557ZM21.84 1c3.5 0 6.775.954 9.582 2.609l-5.81 8.478a8.528 8.528 0 0 0-3.772-.883 8.517 8.517 0 0 0-3.774.883l-5.81-8.478A18.805 18.805 0 0 1 21.84 1ZM11.575 20.639H2C2 14.582 4.598 9.286 8.924 5.936l5.263 7.782" />
+                        <path stroke="#EF3024" stroke-miterlimit="10" stroke-width="2"
+                          d="m11.575 15.448 8.038 2.508a3.648 3.648 0 0 1 3.476-.185 3.606 3.606 0 0 1 1.708 4.823 3.648 3.648 0 0 1-4.854 1.697 3.61 3.61 0 0 1-2.031-2.81l-7.207-4.303.87-1.73ZM31.557 24.099h10.357a18.767 18.767 0 0 1-7.176 13.151l-5.809-8.543a8.375 8.375 0 0 0 2.628-4.608ZM12.357 24.099H2c.485 5.19 3.184 10.061 7.174 13.151l5.81-8.543c-1.32-1.193-2.26-2.878-2.627-4.608Z" />
+                      </svg>
+                    </div>
+                    <div class="tariff-long-item__wrapper">
+                      <div class="tariff-long-item__details">
+                        <span class="tariff-long-item__subtitle">Wi-Fi роутер</span>
+                        <h3 class="tariff-long-item__name">Пример названия оборудования</h3>
+                      </div>
+                    </div>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a class="tariff-long-item" href="#">
+                    <div class="tariff-long-item__picture">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="38" fill="none">
+                        <path stroke="#EF3024" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                          stroke-width="2"
+                          d="M26 33H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v6M36 24v.5-.5ZM36 20v.5-.5ZM34 22v.5-.5ZM38 22v.5-.5Z" />
+                        <path stroke="#EF3024" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                          stroke-width="2"
+                          d="M41 16c0-.578-2.242-1-5.002-1S31 15.468 31 16.046V34.5c0 1.381 2.237 2.5 4.998 2.5S41 35.881 41 34.5V16ZM14 13H8M11 13v9M25 13l-4 9-4-9" />
+                      </svg>
+                    </div>
+                    <div class="tariff-long-item__wrapper">
+                      <div class="tariff-long-item__details">
+                      <h3 class="tariff-long-item__name">236 каналов + <span class="premier"></span></h3>
+                    </div></div>
+                    
+                    <div class="tariff-long-item__button">
+                      <span class="button button--ghost"><span>Смотреть каналы</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- группа -->
+            <div class="tarif-details__group">
+              <h3 class="title">Добавить оборудование</h3>
+              <!-- список опций  -->
+              <ul class="tarif-details__list">
+
+                <li>
+                  <a class="tariff-long-item" href="#">
+                    <div class="tariff-long-item__picture">
+                      <img src="./img/catalog/min.jpg" alt="фото товара" width="96" loading="lazy">
+                    </div>
+                    <div class="tariff-long-item__wrapper">
+                      <div class="tariff-long-item__details">
+                        <span class="tariff-long-item__subtitle">Wi-Fi роутер</span>
+                        <h3 class="tariff-long-item__name">Пример названия оборудования</h3>
+                      </div>
+                      <div class="tariff-long-item__price">
+                        <span class="tariff-long-item__subtitle tariff-long-item__subtitle--mod">Аренда</span>
+                        <h3 class="tariff-long-item__name">190 руб/мес</h3>
+                      </div>
+                    </div>
+                    
+                    <div class="tariff-long-item__button checkbox-button">
+                      <input class="visually-hidden" type="checkbox" id="myCheckbox" checked>
+                      <label class="button" for="myCheckbox">Убрать</label>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="tariff-long-item" href="#">
+                    <div class="tariff-long-item__picture">
+                      <img src="./img/catalog/min.jpg" alt="фото товара" width="96" loading="lazy">
+                    </div>
+                    <div class="tariff-long-item__wrapper">
+                      <div class="tariff-long-item__details">
+                        <span class="tariff-long-item__subtitle">Wi-Fi роутер</span>
+                        <h3 class="tariff-long-item__name">Пример названия оборудования</h3>
+                      </div>
+                      <div class="tariff-long-item__price">
+                        <span class="tariff-long-item__subtitle tariff-long-item__subtitle--mod">Аренда</span>
+                        <h3 class="tariff-long-item__name">190 руб/мес</h3>
+                      </div>
+                    </div>
+                    
+                    <div class="tariff-long-item__button checkbox-button">
+                      <input class="visually-hidden" type="checkbox" id="myCheckbox-2">
+                      <label class="button" for="myCheckbox-2">Добавить</label>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+
+              <!-- кнопка еще  -->
+              <a href="#" class="button"><span>Смотреть всё</span></a>
+            </div>
+
+            <!-- группа -->
+            <div class="tarif-details__group">
+              <h3 class="title">Добавить пакеты каналов</h3>
+              <!-- список опций  -->
+              <ul class="tarif-details__list">
+
+                <li>
+                  <a class="tariff-long-item" href="#">
+                    <div class="tariff-long-item__picture">
+                      <img src="./img/channel/1.jpg" alt="фото товара" width="96" loading="lazy">
+                    </div>
+                    <div class="tariff-long-item__wrapper">
+                      <div class="tariff-long-item__details">
+                        <span class="tariff-long-item__subtitle">Пакет каналов</span>
+                        <h3 class="tariff-long-item__name">Пример названия пакета</h3>
+                      </div>
+                      <div class="tariff-long-item__price">
+                        <h3 class="tariff-long-item__name">299 руб/мес</h3>
+                      </div>
+                    </div>
+                    <div class="tariff-long-item__button checkbox-button">
+                      <input class="visually-hidden" type="checkbox" id="myCheckbox-3" checked>
+                      <label class="button" for="myCheckbox-3">Убрать</label>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="tariff-long-item" href="#">
+                    <div class="tariff-long-item__picture">
+                      <img src="./img/channel/2.jpg" alt="фото товара" width="96" loading="lazy">
+                    </div>
+                    <div class="tariff-long-item__wrapper">
+                      <div class="tariff-long-item__details">
+                        <span class="tariff-long-item__subtitle">Пакет каналов</span>
+                        <h3 class="tariff-long-item__name">Пример названия пакета</h3>
+                      </div>
+                      <div class="tariff-long-item__price">
+                        <h3 class="tariff-long-item__name">299 руб/мес</h3>
+                      </div>
+                    </div>
+                    
+                    <div class="tariff-long-item__button checkbox-button">
+                      <input class="visually-hidden" type="checkbox" id="myCheckbox-4">
+                      <label class="button" for="myCheckbox-4">Добавить</label>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+
+              <!-- кнопка еще  -->
+              <a href="#" class="button"><span>Смотреть всё</span></a>
+            </div>
+
+          </div>
+
+          <!-- боковая панель тарифа  -->
+          <aside class="tarif-details__grid-aside sticky">
+            <!-- карточка заявки на подключение  -->
+            <div class="connection-request">
+              <h3 class="connection-request__title">Заявка на подключение</h3>
+              <ul class="connection-request__details">
+                <li>Тариф Sky home TV 300 <strong>850 руб/мес</strong></li>
+                <li>Wi-Fi роутер Название роутера <strong>145 руб/мес</strong></li>
+                <li>Пакет каналов Amediateka <strong>299 руб/мес</strong></li>
+                <li>Подключение <strong>500 руб</strong></li>
+              </ul>
+              <ul class="connection-request__price">
+                <li>Стоимость <strong>500 руб</strong></li>
+                <li>Аренда <strong>1294 руб/мес</strong></li>
+              </ul>
+              <p class="connection-request__text">Оставьте заявку, и мы вам перезвоним, чтобы уточнить все детали.</p>
+              <a href="#" class="button"><span>Оставить заявку</span></a>
+
+            </div>
+
+          </aside>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Помощь в выборе оборудования  -->
+    <article class="promo section">
+      <div class="wrapper">
+        <div class="promo__grid promo__grid--two">
+          <div class="promo__image">
+            <img src="./img/promo/2.png" alt="роутер" width="480" loading="lazy">
+          </div>
+          <div class="promo__details">
+            <h2 class="promo__title">Помощь в выборе оборудования</h2>
+            <form action="">
+              <div class="promo__form">
+
+                <div class="promo__form-item">
+                  <label for="promo-form-name-2">Ваш телефон:</label>
+                  <input id="promo-form-name-2" type="tel" name="user-phone-2" placeholder="Введите телефон" required>
+                </div>
+
+                <div class="promo__form-item">
+                  <label for="promo-form-tel-2">Представьтесь, пожалуйста:</label>
+                  <input id="promo-form-tel-2" type="text" name="username-2" placeholder="Введите имя">
+                </div>
+
+                <div class="promo__form-item promo__form-item--check">
+                  <input type="checkbox" name="user-consent-2" id="promo-form-consent-2" checked>
+                  <label for="promo-form-consent-2">Я согласен с условиями обработки <a href="#"
+                      target="_blank">персональных данных</a></label>
+                </div>
+
+                <button class="button" type="submit"><span>Отправить</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+
   </main>
 
-  <!-- содержит условие подключения файла со скриптами для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    var links = document.getElementsByTagName("link");
-    var isStylesheetIncluded = false;
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Помощь</h3>
+          <div class="footer__support-grid">
+            <ul>
+              <li>
+                <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              </li>
+              <li>
+                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Частые вопросы</a>
+              </li>
+              <li>
+                <a href="#">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+          <ul class="footer__buttons">
+            <li>
+              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span>Заказать звонок</span></a>
+            </li>
+          </ul>
 
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].href === "libs/swiper-bundle.min.css") {
-        isStylesheetIncluded = true;
-        break;
-      }
-    }
+          <div class="footer__copyright">
+            <span>© Skytelecom 2022.</span> Создание сайта - <a href="https://very-good.ru/"
+              target="_blank">Very-good</a>
+          </div>
+        </div>
 
-    if (isStylesheetIncluded) {
-      var script = document.createElement("script");
-      script.src = "./libs/swiper-bundle.min.js";
-      document.head.appendChild(script);
-    }
-  </script>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="./libs/smoothscroll.min.js"></script>
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+
   <script src="./js/scripts.js"></script>
 
 </body>

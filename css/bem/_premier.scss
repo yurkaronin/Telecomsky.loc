@@ -1,0 +1,13 @@
+.premier {
+  display: inline-block;
+  width: 120px;
+  height: 32px;
+  background-image: url(../../img/premier.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  
+}
+
+.tariff-long-item__name .premier {
+  margin-left: 16px;
+}

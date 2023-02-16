@@ -1,3 +1,11 @@
+// первый экран 
+.hero {
+  &__content--mod {
+    max-width: initial;
+    margin-right: initial;
+  }
+}
+
 // карточки с анонсами товаров 
 .rates__list {
   grid-template-columns: 1fr 1fr;

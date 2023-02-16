@@ -73,6 +73,11 @@
       }
     }
   }
+  &--clear {
+    background-color: #ffffff;
+    border-color: transparent;
+    color: #ef3024;
+  }
 
   &--center {
     margin: 0 auto;

@@ -1,0 +1,84 @@
+.tariff-long-item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: #f7f8fb;
+  border-radius: 20px;
+  padding: 16px;
+  overflow: hidden;
+  min-height: 104px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #EAECF0;
+  }
+
+  &__picture {
+    max-width: 96px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    align-items: center;
+  }
+
+  &__details {
+
+  }
+  &__name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: #28303d;
+    display: flex;
+    align-items: center;
+  }
+  &__subtitle {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(#28303d, 0.7);
+
+    &--mod {
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 6px;
+        background-image: url(../img/icons/arrow.svg);
+        background-repeat: no-repeat;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__price {
+    margin-left: 32px;
+  }
+
+  &__button {
+    .button {
+      min-width: 136px;
+    }
+  }
+}

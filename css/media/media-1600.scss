@@ -16,3 +16,40 @@
     left: 8px;
   }
 }
+
+@media (max-width: 1500px) {
+  .tarif-details {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    .sticky {
+      position: initial;
+    }
+    .connection-request {
+      margin-top: initial;
+      position: initial;
+    }
+  }
+  // .connection-request {
+  //   &__details {
+  //     li {
+  //       justify-content: flex-start;
+
+  //       strong {
+  //         margin-left: 16px;
+  //       }
+  //     }
+  //   }
+  //   &__price {
+  //     justify-content: flex-start;
+  //     li {
+  //       max-width: max-content;
+  //       strong {
+  //         display: initial;
+  //         margin-left: 16px;
+  //       }
+  //     }
+  //   }
+
+  // }
+}

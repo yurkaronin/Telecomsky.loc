@@ -14,3 +14,16 @@
 .slider .button--slider.prev {
   left: 8px;
 }
+
+@media (max-width: 1500px) {
+  .tarif-details__grid {
+    grid-template-columns: 1fr;
+  }
+  .tarif-details .sticky {
+    position: initial;
+  }
+  .tarif-details .connection-request {
+    margin-top: initial;
+    position: initial;
+  }
+}
