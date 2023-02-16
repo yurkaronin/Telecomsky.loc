@@ -977,7 +977,7 @@ input[type=radio].visually-hidden {
 }
 
 .about {
-  padding: 25px 0 64px;
+  padding: 32px 0;
 }
 .about__list {
   list-style: none;
@@ -1037,6 +1037,12 @@ input[type=radio].visually-hidden {
   margin-top: 38px;
 }
 
+.rates {
+  padding: 32px 0 64px;
+}
+.rates__group:not(:last-child) {
+  margin-bottom: 42px;
+}
 .rates .title {
   margin-bottom: 0;
   color: #28303D;

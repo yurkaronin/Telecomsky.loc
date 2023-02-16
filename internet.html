@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Интернет</title>
+  <title>Главная</title>
   <!-- <base href="http://127.0.0.12:5500/"> -->
 
   <link rel="stylesheet" href="./libs/normalize.min.css">
@@ -62,10 +62,9 @@
 
       </div>
       <div class="header__bottom">
-        <a href="#" class="header__logo">
+        <a href="/" class="header__logo">
           <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
         </a>
-
 
         <nav class="header__navigation">
           <ul class="navigation-list">
@@ -182,9 +181,11 @@
 
     <!-- Наши тарифы  -->
     <section class="rates">
-      <div class="wrapper">
-        <h2 class="title">Выберите необходимый Вам интернет</h2>
-        <div class="filter">
+      <!-- фильтр  -->
+      <div class="filter">
+        <div class="wrapper">
+          <h2 class="title">Наши тарифы</h2>
+
           <form action="">
             <div class="filter__flex">
               <fieldset class="filter__group">
@@ -215,323 +216,328 @@
 
         </div>
       </div>
-    </section>
 
-    <!-- Интернет для квартиры -->
-    <section class="rates">
-      <div class="wrapper">
+      <!-- Интернет для квартиры -->
+      <div class="rates__group">
+        <div class="wrapper">
 
-        <h2 class="title">Интернет для квартиры</h2>
-        <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
-          инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
-          высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
-          сопровождение.</p>
+          <h2 class="title">Интернет для квартиры</h2>
+          <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
+            инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
+            высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
+            сопровождение.</p>
 
-        <ul class="rates__list">
+          <ul class="rates__list">
 
-          <li class="rates__item">
-            <a class="rate-card" href="#">
-              <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">450 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card" href="#">
+                <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">450 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card" href="#">
-              <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">600 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card" href="#">
+                <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">600 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card" href="#">
-              <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">650 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card" href="#">
+                <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">650 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card" href="#">
-              <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">850 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card" href="#">
+                <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">850 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-        </ul>
+          </ul>
 
+        </div>
       </div>
-    </section>
-    <!-- Интернет для квартиры с телевидением -->
-    <section class="rates">
-      <div class="wrapper">
 
-        <h2 class="title">Интернет для квартиры с телевидением</h2>
-        <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
-          инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
-          высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
-          сопровождение.</p>
+      <!-- Интернет для квартиры с телевидением -->
+      <div class="rates__group">
+        <div class="wrapper">
 
-        <ul class="rates__list">
+          <h2 class="title">Интернет для квартиры с телевидением</h2>
+          <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
+            инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
+            высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
+            сопровождение.</p>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--two" href="#">
-              <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">450 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+          <ul class="rates__list">
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--two" href="#">
-              <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">600 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--two" href="#">
+                <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">450 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--two" href="#">
-              <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">650 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--two" href="#">
+                <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">600 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--two" href="#">
-              <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">850 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--two" href="#">
+                <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">650 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-        </ul>
+            <li class="rates__item">
+              <a class="rate-card rate-card--two" href="#">
+                <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">850 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
+          </ul>
+
+        </div>
       </div>
-    </section>
-    <!-- Интернет в частный дом PON -->
-    <section class="rates">
-      <div class="wrapper">
 
-        <h2 class="title">Интернет для квартиры</h2>
-        <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
-          инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
-          высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
-          сопровождение.</p>
+      <!-- Интернет в частный дом PON -->
+      <div class="rates__group">
+        <div class="wrapper">
 
-        <ul class="rates__list">
+          <h2 class="title">Интернет для квартиры</h2>
+          <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
+            инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
+            высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
+            сопровождение.</p>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--three" href="#">
-              <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">450 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+          <ul class="rates__list">
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--three" href="#">
-              <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">600 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--three" href="#">
+                <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">450 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--three" href="#">
-              <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">650 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--three" href="#">
+                <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">600 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--three" href="#">
-              <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">850 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--three" href="#">
+                <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">650 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-        </ul>
+            <li class="rates__item">
+              <a class="rate-card rate-card--three" href="#">
+                <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">850 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
+          </ul>
+
+        </div>
       </div>
-    </section>
-    <!-- Интернет в частный дом с телевидением -->
-    <section class="rates">
-      <div class="wrapper">
 
-        <h2 class="title">Интернет для квартиры</h2>
-        <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
-          инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
-          высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
-          сопровождение.</p>
+      <!-- Интернет в частный дом с телевидением -->
+      <div class="rates__group">
+        <div class="wrapper">
 
-        <ul class="rates__list">
+          <h2 class="title">Интернет для квартиры</h2>
+          <p class="subtitle">SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную
+            инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь,
+            высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное
+            сопровождение.</p>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--four" href="#">
-              <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">450 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+          <ul class="rates__list">
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--four" href="#">
-              <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">600 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--four" href="#">
+                <h3 class="rate-card__title"><span>Sky Home 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">450 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--four" href="#">
-              <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">650 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--four" href="#">
+                <h3 class="rate-card__title"><span>Sky Home TV 50</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">50 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">600 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="rates__item">
-            <a class="rate-card rate-card--four" href="#">
-              <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
-              <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
-              <ul class="rate-card__list">
-                <li>Для 2-5 устройств</li>
-                <li>Скорость скачивания 12,5 Мбит/сек</li>
-              </ul>
-              <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
-              <div class="rate-card__bottom">
-                <span class="rate-card__price">850 руб/мес</span>
-                <div class="button button--white-mod"><span>Подключить</span></div>
-              </div>
-            </a>
-          </li>
+            <li class="rates__item">
+              <a class="rate-card rate-card--four" href="#">
+                <h3 class="rate-card__title"><span>Sky PON 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">650 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
-        </ul>
+            <li class="rates__item">
+              <a class="rate-card rate-card--four" href="#">
+                <h3 class="rate-card__title"><span>Sky PON TV 100</span></h3>
+                <span class="rate-card__decorate rate-card__decorate--speed">100 Мбит/сек.</span>
+                <ul class="rate-card__list">
+                  <li>Для 2-5 устройств</li>
+                  <li>Скорость скачивания 12,5 Мбит/сек</li>
+                </ul>
+                <span class="rate-card__decorate rate-card__decorate--channels">179 каналов</span>
+                <div class="rate-card__bottom">
+                  <span class="rate-card__price">850 руб/мес</span>
+                  <div class="button button--white-mod"><span>Подключить</span></div>
+                </div>
+              </a>
+            </li>
 
+          </ul>
+
+        </div>
       </div>
+
     </section>
+
     <!-- Подключить интернет  -->
-    <div class="wrapper">
-      <article class="promo promo--one">
+    <article class="promo promo--one section">
+      <div class="wrapper">
         <div class="promo__grid">
           <div class="promo__image">
             <img src="./img/promo/1.png" alt="роутер" width="480" loading="lazy">
@@ -543,7 +549,7 @@
 
                 <div class="promo__form-item">
                   <label for="promo-form-name">Ваш телефон:</label>
-                  <input id="promo-form-name" type="text" name="user-phone" placeholder="Введите телефон">
+                  <input id="promo-form-name-2" type="tel" name="user-phone-2" placeholder="Введите телефон" required>
                 </div>
 
                 <div class="promo__form-item">
@@ -562,11 +568,14 @@
             </form>
           </div>
         </div>
-      </article>
-    </div>
-    <!-- о компании  -->
+      </div>
+
+    </article>
+
+    <!-- Преимущества нашего интернета  -->
     <section class="about">
       <div class="wrapper">
+        <h2 class="title">Преимущества нашего интернета</h2>
 
         <ul class="about__list">
           <li>
@@ -604,6 +613,7 @@
 
       </div>
     </section>
+
     <!-- faq  -->
     <section class="faq">
       <div class="wrapper">
@@ -621,12 +631,12 @@
               <h3>Пример часто задаваемого вопроса</h3>
             </div>
             <div class="faq__answer">
-                SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
-                организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
-                доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
-                SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
-                организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
-                доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
+              SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
+              организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
+              доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
+              SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
+              организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
+              доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
             </div>
           </li>
 
@@ -641,12 +651,12 @@
               <h3>Пример часто задаваемого вопроса</h3>
             </div>
             <div class="faq__answer">
-                SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
-                организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
-                доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
-                SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
-                организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
-                доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
+              SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
+              организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
+              доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
+              SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
+              организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
+              доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
             </div>
           </li>
 
@@ -661,12 +671,12 @@
               <h3>Пример часто задаваемого вопроса</h3>
             </div>
             <div class="faq__answer">
-                SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
-                организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
-                доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
-                SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
-                организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
-                доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
+              SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
+              организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
+              доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
+              SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру
+              организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной
+              доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.
             </div>
           </li>
 
@@ -675,11 +685,13 @@
         <a href="#" class="button button--big button--center"><span>Все вопросы</span></a>
       </div>
     </section>
+
     <!-- Оборудование  -->
     <section class="equip">
-      <div class="wrapper">
-        <h2 class="title">Оборудование</h2>
-        <div class="filter">
+      <!-- фильтр  -->
+      <div class="filter">
+        <div class="wrapper">
+          <h2 class="title">Оборудование</h2>
           <form action="">
             <div class="filter__flex">
               <fieldset class="filter__group">
@@ -698,16 +710,15 @@
             </div>
           </form>
 
-
         </div>
       </div>
-      <!-- слайдер c оборудованием -->
+      <!-- слайдер  -->
       <div class="slider">
         <div class="wrapper">
           <div class="swiper">
-            <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper">
-              <!-- Slides -->
+              <!-- Слайды -->
               <div class="swiper-slide">
                 <a class="equip__card" href="#">
                   <div class="equip__photo">
@@ -724,27 +735,6 @@
                   <div class="equip__bottom">
                     <span class="equip__label">Аренда</span>
                     <span class="equip__price">450 руб/мес</span>
-                    <div class="button button--white-mod"><span>Заказать</span></div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a class="equip__card" href="#">
-                  <div class="equip__photo">
-                    <img src="./img/equip/2.jpg" alt="фото оборудования" width="304" loading="lazy">
-                  </div>
-                  <p class="equip__subtitle">ТВ-приставка</p>
-                  <h3 class="equip__title">Название оборудования</h3>
-                  <ul class="equip__list">
-                    <li>Скорость соединения: <span>300 Мбит/с</span>
-                    </li>
-                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
-                    <li>Онлайн одновременно: <span>10 устройств</span></li>
-                  </ul>
-                  <div class="equip__bottom">
-                    <span class="equip__label">Аренда</span>
-                    <span class="equip__price">165 руб/мес</span>
                     <div class="button button--white-mod"><span>Заказать</span></div>
                   </div>
                 </a>
@@ -813,6 +803,27 @@
                 </a>
               </div>
 
+              <div class="swiper-slide">
+                <a class="equip__card" href="#">
+                  <div class="equip__photo">
+                    <img src="./img/equip/1.jpg" alt="фото оборудования" width="304" loading="lazy">
+                  </div>
+                  <p class="equip__subtitle">Wi-Fi роутер</p>
+                  <h3 class="equip__title">Название оборудования</h3>
+                  <ul class="equip__list">
+                    <li>Скорость соединения: <span>300 Мбит/с</span>
+                    </li>
+                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
+                    <li>Онлайн одновременно: <span>10 устройств</span></li>
+                  </ul>
+                  <div class="equip__bottom">
+                    <span class="equip__label">Аренда</span>
+                    <span class="equip__price">450 руб/мес</span>
+                    <div class="button button--white-mod"><span>Заказать</span></div>
+                  </div>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -822,10 +833,11 @@
         <button class="button button--slider next" type="button"></button>
       </div>
     </section>
+
     <!-- Помощь в выборе оборудования  -->
-    <div class="wrapper">
-      <article class="promo promo--two">
-        <div class="promo__grid">
+    <article class="promo section">
+      <div class="wrapper">
+        <div class="promo__grid promo__grid--two">
           <div class="promo__image">
             <img src="./img/promo/2.png" alt="роутер" width="480" loading="lazy">
           </div>
@@ -836,7 +848,7 @@
 
                 <div class="promo__form-item">
                   <label for="promo-form-name-2">Ваш телефон:</label>
-                  <input id="promo-form-name-2" type="text" name="user-phone-2" placeholder="Введите телефон">
+                  <input id="promo-form-name-2" type="tel" name="user-phone-2" placeholder="Введите телефон" required>
                 </div>
 
                 <div class="promo__form-item">
@@ -855,9 +867,8 @@
             </form>
           </div>
         </div>
-      </article>
-    </div>
-
+      </div>
+    </article>
 
   </main>
 
