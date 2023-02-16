@@ -47,6 +47,13 @@
   margin-top: 16px;
   padding: 11px 24px;
 }
+.hero--inner {
+  padding-top: 111px;
+  padding-bottom: 65px;
+}
+.hero--inner .hero__video {
+  height: 100%;
+}
 
 .footer {
   padding: 32px 0 30px;

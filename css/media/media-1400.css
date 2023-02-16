@@ -223,6 +223,10 @@
   margin-left: initial;
 }
 
+.rates__list {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer__grid {
   grid-template-columns: 1fr 1fr;
 }

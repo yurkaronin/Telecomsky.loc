@@ -59,7 +59,7 @@ html *::after {
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 325px;
   overflow-x: hidden;
   font-family: "Rubik", sans-serif;
   background-color: #ffffff;

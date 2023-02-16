@@ -19,11 +19,11 @@
   &__image {
     margin-left: initial;
     margin: 0 auto;
-}
-&__title {
-  margin-bottom: 16px;
-  font-size: 30px;
-}
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -71,5 +71,12 @@
     &__top {
       margin-bottom: 10px;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  // карточки с анонсами товаров
+  .rates__list {
+    grid-template-columns: 1fr;
   }
 }

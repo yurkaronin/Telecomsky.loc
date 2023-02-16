@@ -58,6 +58,13 @@
     margin-top: 16px;
     padding: 11px 24px;
   }
+  &--inner {
+    padding-top: 111px;
+    padding-bottom: 65px;
+  }
+  &--inner &__video {
+    height: 100%;
+  }
 }
 
 .footer {

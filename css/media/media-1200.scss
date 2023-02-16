@@ -1,3 +1,9 @@
+// карточки с анонсами товаров 
+.rates__list {
+  grid-template-columns: 1fr 1fr;
+}
+
+// о нас 
 .about {
   &__list {
 

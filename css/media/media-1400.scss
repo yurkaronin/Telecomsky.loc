@@ -246,6 +246,11 @@
     margin-left: initial;
   }
 }
+
+// карточки с анонсами товаров 
+.rates__list {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 // подвал
 .footer {
   &__grid {
