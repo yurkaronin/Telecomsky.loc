@@ -4,6 +4,12 @@
 @import "site/fonts";
 @import "site/global";
 
+@import "bem/wrapper";
+@import "bem/button";
+@import "bem/title";
+@import "bem/social-link";
+@import "bem/phone";
+
 @import "bem/body";
 @import "bem/visually-hidden";
 @import "bem/mob-menu-open";
@@ -22,12 +28,8 @@
 @import "bem/premier";
 @import "bem/connection-request";
 @import "bem/sticky";
-
-@import "bem/wrapper";
-@import "bem/button";
-@import "bem/title";
-@import "bem/social-link";
-@import "bem/phone";
+@import "bem/equip";
+@import "bem/instructions";
 
 @import "sections/header";
 @import "sections/mobile-nivigation";
@@ -37,6 +39,5 @@
 @import "sections/about";
 @import "sections/rates";
 @import "sections/promo";
-@import "sections/equip";
 @import "sections/faq";
 @import "sections/tarif-details";

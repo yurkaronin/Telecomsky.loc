@@ -259,3 +259,9 @@
 .footer__support-grid {
   gap: 16px;
 }
+
+@media (max-width: 1250px) {
+  .promo__details {
+    padding: 16px 0;
+  }
+}

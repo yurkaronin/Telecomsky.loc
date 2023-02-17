@@ -127,3 +127,11 @@
     }
   }
 }
+
+.faq__list li:first-child {
+  border-color: transparent;
+}
+
+.faq__list li::after {
+  background-color: transparent;
+}

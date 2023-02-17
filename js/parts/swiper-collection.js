@@ -47,14 +47,14 @@ const swiper2 = new Swiper(".rates .swiper", {
   }
 });
 // Оборудование
-const swiper3 = new Swiper(".equip .swiper", {
+const swiper3 = new Swiper(".equips .swiper", {
   slidesPerView: 4,
   spaceBetween: 32,
   // calculateHeight:true,
   // autoHeight: true,
   navigation: {
-    nextEl: ".equip .button--slider.next",
-    prevEl: ".equip .button--slider.prev",
+    nextEl: ".equips .button--slider.next",
+    prevEl: ".equips .button--slider.prev",
   },
   breakpoints: {
     320: {

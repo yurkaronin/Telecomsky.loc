@@ -9,11 +9,16 @@
     border-radius: 20px;
     overflow: hidden;
     padding: 0 65px;
-
-    &--two {
-      background: #dcd4f9;
-    }
   }
+
+  &--two &__grid {
+    
+    background: #dcd4f9;
+  }
+  &--three &__grid {
+    background: #EBD6F1;
+  }
+
   &__image {
     margin-left: auto;
     img {

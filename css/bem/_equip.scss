@@ -1,16 +1,14 @@
 .equip {
-  padding: 32px 0;
-  &__card {
-    display: block;
-    padding: 24px;
-    background-color: #f7f8fb;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all 0.3s;
-    &:hover {
-      background-color: #eaecf0;
-    }
+  display: block;
+  padding: 24px;
+  background-color: #f7f8fb;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #eaecf0;
   }
+
   &__photo {
     margin-bottom: 16px;
     border-radius: 12px;
@@ -75,5 +73,34 @@
     font-size: 32px;
     color: #28303d;
     margin-bottom: 16px;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4f5661;
+  }
+  &__decorate {
+    font-weight: 300;
+    font-size: 32px;
+    color: #28303d;
+    margin: 0;
+    margin-bottom: 12px;
+    display: grid;
+    gap: 24px;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    position: relative;
+    &::before {
+      display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(../../img/icons/channels.svg);
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    background-size: contain;
+    }
   }
 }

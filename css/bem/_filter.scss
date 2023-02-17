@@ -1,5 +1,6 @@
 .filter {
-  margin-bottom: 32px;
+  margin-bottom: 54px;
+
   &__flex {
     display: flex;
     align-items: center;
@@ -52,5 +53,10 @@
       color: #ef3024;
     }
   }
+
+  .title {
+    margin-bottom: 32px;
+  }
   
 }
+
