@@ -1631,6 +1631,10 @@ input[type=radio].visually-hidden {
   background-color: transparent;
 }
 
+.faq__list li:first-child {
+  border-color: transparent;
+}
+
 .tarif-details {
   position: relative;
   z-index: 11;
