@@ -19,7 +19,7 @@ function headerChange() {
 
 // Основная рабочая область
 document.addEventListener("DOMContentLoaded", () => {
-  
+
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
   headerChange();
   // отслеживаем событие прокрутки страницы > модификация шапки
@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/faqlist.js");
   includeFiles("./js/parts/input-phone-mask.js");
   includeFiles("./js/parts/button-add.js");
-  
+  includeFiles("./js/parts/channel-details.js");
+
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
