@@ -1169,6 +1169,11 @@ input[type=radio].visually-hidden {
   font-size: 64px;
   color: #28303d;
 }
+.hero .title--mod {
+  font-weight: 500;
+  font-size: 48px;
+  color: #28303d;
+}
 .hero .title + .button {
   margin-top: 38px;
   padding: 15px 24px;
