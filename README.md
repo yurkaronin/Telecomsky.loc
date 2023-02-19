@@ -1,3 +1,3 @@
 # Telecomsky.loc
 
- Вёрстка сайта для компании Telecomsky
+ Вёрстка сайта для компании Telecomsky: https://yurkaronin.github.io/Telecomsky.loc/
