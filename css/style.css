@@ -1837,6 +1837,17 @@ input[type=radio].visually-hidden {
   font-size: 16px;
   color: #727881;
 }
-.page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  color: #28303d;
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 18px;
   color: #28303d;
 }

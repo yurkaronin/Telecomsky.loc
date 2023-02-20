@@ -1,7 +1,7 @@
 .page-content {
   padding: 56px 0 32px;
   font-size: 16px;
-    color: #727881;
+  color: #727881;
 
   img {
     border-radius: 20px;
@@ -11,7 +11,18 @@
     font-size: 16px;
     color: #727881;
   }
-  h1, h2, h3, h4, h5, h6  {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #28303d;
   }
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 18px;
+  color: #28303d;
 }
