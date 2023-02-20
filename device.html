@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Устройство</title>
+  <!-- <base href="http://127.0.0.12:5500/"> -->
+
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)">
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="./css/media/media-1200.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)">
+  <link rel="stylesheet" href="./css/media/media-550.css" media="screen and (max-width: 550px)">
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
+  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
+</head>
+
+<body>
+  <!-- Шапка  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
+
+          <div class="header__phone">
+            <a class="phone" href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="header__bottom">
+        <a href="/" class="header__logo">
+          <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
+        </a>
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Оборудование</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- мобильное меню  -->
+  <div class="mobile-nivigation">
+    <div class="wrapper">
+      <ul class="navigation-list">
+        <li>
+          <a href="#"><span>Интернет</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Телевидение</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Оборудование</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Акции</span></a>
+        </li>
+        <li>
+          <a href="#"><span>О компании</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Контакты</span></a>
+        </li>
+      </ul>
+      <div class="mobile-nivigation__support">
+        <h3 class="mobile-nivigation__title">Помощь</h3>
+        <div class="mobile-nivigation__support-grid">
+          <ul>
+            <li>
+              <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li>
+              <a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="mobile-nivigation__contact-flex">
+        <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="mobile-nivigation__buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Вход</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Основной контент  -->
+  <main class="main">
+
+    <!-- первый экран на главной  -->
+    <section class="hero hero--inner">
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="hero__content hero__content--mod">
+          <h1 class="title title--mod">D-Link DIR-615S></h1>
+          <a href="#" class="button button--clear"><span>Назад к списку</span></a>
+
+        </div>
+      </div>
+    </section>
+    <section class="tarif-details section">
+      <h2 class="visually-hidden">Подробная информация по тарифному плану</h2>
+      <div class="wrapper">
+        <!-- Сетка блока  -->
+        <div class="tarif-details__grid">
+
+          <!-- информация  -->
+          <div class="tarif-details__grid-content">
+            <!-- слайдер  -->
+            <div class="solo-slider">
+              <div class="solo-slider__grid">
+                <div class="solo-slider__left">
+                  <!-- большой слайдер  -->
+                  <div class="swiper mySwiper1 ">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/catalog/1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/3.jpg" alt=""></div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+
+                <div class="solo-slider__right">
+                  <!-- мелкий слайдер  -->
+                  <div class="swiper mySwiper2 ">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/catalog/min1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/catalog/min3.jpg" alt=""></div>
+
+                  </div>
+                </div>
+              
+              </div>
+              
+            </div>
+
+
+
+            <!-- описание  -->
+            <ul class="faq__list faq__list--mod">
+
+              <li class="faq__item">
+                <div class="faq__question">
+                  <div class="faq__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="11" width="24" height="2" fill="#EF3024"></rect>
+                      <rect class="move" x="13" width="24" height="2" transform="rotate(90 13 0)" fill="#EF3024"></rect>
+                    </svg>
+                  </div>
+                  <h3>Характеристики</h3>
+                </div>
+                <div class="faq__answer">
+                  <ul>
+                    <li>Скорость соединения: <strong>300 Мбит/с</strong></li>
+                    <li>Площадь покрытия: <strong>70 кв. м.</strong></li>
+                    <li>Онлайн одновременно: <strong>10 устройств</strong></li>
+                    <li>Стандарты и протоколы: <strong>IEEE 802.11ac Wave 2, IEEE 802.11a/b/g/n</strong></li>
+                    <li>Цвет: <strong>Чёрный</strong></li>
+                    <li>Интерфейс: <strong>Порт WAN 10/100/1000BASE-T, 4 порта LAN 10/100/1000BASE-T</strong></li>
+                    <li>Габариты для роутеров: <strong>205 x 136 x 44 мм</strong></li>
+                    <li>Частота: <strong>2,4 ГГц и 5 ГГц, одновременная работа в двух диапазонах</strong></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="faq__item">
+                <div class="faq__question">
+                  <div class="faq__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="11" width="24" height="2" fill="#EF3024"></rect>
+                      <rect class="move" x="13" width="24" height="2" transform="rotate(90 13 0)" fill="#EF3024"></rect>
+                    </svg>
+                  </div>
+                  <h3>Описание</h3>
+                </div>
+                <div class="faq__answer">
+                  <ul>
+                    <li>Скорость соединения: <strong>300 Мбит/с</strong></li>
+                    <li>Площадь покрытия: <strong>70 кв. м.</strong></li>
+                    <li>Онлайн одновременно: <strong>10 устройств</strong></li>
+                    <li>Стандарты и протоколы: <strong>IEEE 802.11ac Wave 2, IEEE 802.11a/b/g/n</strong></li>
+                    <li>Цвет: <strong>Чёрный</strong></li>
+                    <li>Интерфейс: <strong>Порт WAN 10/100/1000BASE-T, 4 порта LAN 10/100/1000BASE-T</strong></li>
+                    <li>Габариты для роутеров: <strong>205 x 136 x 44 мм</strong></li>
+                    <li>Частота: <strong>2,4 ГГц и 5 ГГц, одновременная работа в двух диапазонах</strong></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="faq__item">
+                <div class="faq__question">
+                  <div class="faq__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="11" width="24" height="2" fill="#EF3024"></rect>
+                      <rect class="move" x="13" width="24" height="2" transform="rotate(90 13 0)" fill="#EF3024"></rect>
+                    </svg>
+                  </div>
+                  <h3>Инструкции по настройке</h3>
+                </div>
+                <div class="faq__answer">
+                  <ul>
+                    <li>Скорость соединения: <strong>300 Мбит/с</strong></li>
+                    <li>Площадь покрытия: <strong>70 кв. м.</strong></li>
+                    <li>Онлайн одновременно: <strong>10 устройств</strong></li>
+                    <li>Стандарты и протоколы: <strong>IEEE 802.11ac Wave 2, IEEE 802.11a/b/g/n</strong></li>
+                    <li>Цвет: <strong>Чёрный</strong></li>
+                    <li>Интерфейс: <strong>Порт WAN 10/100/1000BASE-T, 4 порта LAN 10/100/1000BASE-T</strong></li>
+                    <li>Габариты для роутеров: <strong>205 x 136 x 44 мм</strong></li>
+                    <li>Частота: <strong>2,4 ГГц и 5 ГГц, одновременная работа в двух диапазонах</strong></li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- боковая панель тарифа  -->
+          <aside class="tarif-details__grid-aside sticky">
+            <!-- карточка заявки на подключение  -->
+            <div class="connection-request">
+              <h3 class="connection-request__title">Варианты покупки</h3>
+
+              <div class="connection-request__form">
+                <form action="">
+                  <ul>
+                    <li>
+                      <input class="visually-hidden" id="cust-form-check-1" type="radio" name="Варианты покупки"
+                        checked>
+                      <label for="cust-form-check-1">
+                        <p>Полная стоимость
+                          <span class="bold">3490 руб.</span>
+                        </p>
+
+                      </label>
+                    </li>
+                    <li>
+                      <input class="visually-hidden" id="cust-form-check-2" type="radio" name="Варианты покупки">
+                      <label for="cust-form-check-2">
+                        <p>Аренда
+                          <span class="bold">190 руб/мес</span>
+                        </p>
+
+                      </label>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+              <p class="connection-request__text">Оставьте заявку, и мы вам перезвоним, чтобы уточнить все детали.</p>
+              <a href="#" class="button"><span>Оставить заявку</span></a>
+
+            </div>
+
+          </aside>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Помощь в выборе оборудования  -->
+    <article class="promo promo--two">
+      <div class="wrapper">
+        <div class="promo__grid">
+          <div class="promo__image">
+            <img src="./img/promo/2.png" alt="роутер" width="480" loading="lazy">
+          </div>
+          <div class="promo__details">
+            <h2 class="promo__title">Помощь в выборе оборудования</h2>
+            <form action="">
+              <div class="promo__form">
+
+                <div class="promo__form-item">
+                  <label for="promo-form-name-2">Ваш телефон:</label>
+                  <input id="promo-form-name-2" type="tel" name="user-phone-2" placeholder="Введите телефон" required>
+                </div>
+
+                <div class="promo__form-item">
+                  <label for="promo-form-tel-2">Представьтесь, пожалуйста:</label>
+                  <input id="promo-form-tel-2" type="text" name="username-2" placeholder="Введите имя">
+                </div>
+
+                <div class="promo__form-item promo__form-item--check">
+                  <input type="checkbox" name="user-consent-2" id="promo-form-consent-2" checked>
+                  <label for="promo-form-consent-2">Я согласен с условиями обработки <a href="#"
+                      target="_blank">персональных данных</a></label>
+                </div>
+
+                <button class="button" type="submit"><span>Отправить</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- смотрите так же  -->
+    <!-- Оборудование  -->
+    <section class="equips section">
+      <div class="wrapper">
+        <h2 class="title">Смотрите так же</h2>
+      </div>
+      <div class="slider">
+        <div class="wrapper">
+          <div class="swiper">
+
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="equip" href="#">
+                  <div class="equip__photo">
+                    <img src="./img/equip/1.jpg" alt="фото оборудования" width="304" loading="lazy">
+                  </div>
+                  <p class="equip__subtitle">Wi-Fi роутер</p>
+                  <h3 class="equip__title">Название оборудования</h3>
+                  <ul class="equip__list">
+                    <li>Скорость соединения: <span>300 Мбит/с</span>
+                    </li>
+                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
+                    <li>Онлайн одновременно: <span>10 устройств</span></li>
+                  </ul>
+                  <div class="equip__bottom">
+                    <span class="equip__label">Аренда</span>
+                    <span class="equip__price">450 руб/мес</span>
+                    <div class="button button--white-mod"><span>Заказать</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="equip" href="#">
+                  <div class="equip__photo">
+                    <img src="./img/equip/2.jpg" alt="фото оборудования" width="304" loading="lazy">
+                  </div>
+                  <p class="equip__subtitle">ТВ-приставка</p>
+                  <h3 class="equip__title">Название оборудования</h3>
+                  <ul class="equip__list">
+                    <li>Скорость соединения: <span>300 Мбит/с</span>
+                    </li>
+                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
+                    <li>Онлайн одновременно: <span>10 устройств</span></li>
+                  </ul>
+                  <div class="equip__bottom">
+                    <span class="equip__label">Аренда</span>
+                    <span class="equip__price">165 руб/мес</span>
+                    <div class="button button--white-mod"><span>Заказать</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="equip" href="#">
+                  <div class="equip__photo">
+                    <img src="./img/equip/3.jpg" alt="фото оборудования" width="304" loading="lazy">
+                  </div>
+                  <p class="equip__subtitle">Wi-Fi роутер</p>
+                  <h3 class="equip__title">Название оборудования</h3>
+                  <ul class="equip__list">
+                    <li>Скорость соединения: <span>300 Мбит/с</span>
+                    </li>
+                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
+                    <li>Онлайн одновременно: <span>10 устройств</span></li>
+                  </ul>
+                  <div class="equip__bottom">
+                    <span class="equip__label">Полная стоимость</span>
+                    <span class="equip__price">3 480 руб/мес</span>
+                    <div class="button button--white-mod"><span>Заказать</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="equip" href="#">
+                  <div class="equip__photo">
+                    <img src="./img/equip/4.jpg" alt="фото оборудования" width="304" loading="lazy">
+                  </div>
+                  <p class="equip__subtitle">ТВ-приставка</p>
+                  <h3 class="equip__title">Название оборудования</h3>
+                  <ul class="equip__list">
+                    <li>Скорость соединения: <span>300 Мбит/с</span>
+                    </li>
+                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
+                    <li>Онлайн одновременно: <span>10 устройств</span></li>
+                  </ul>
+                  <div class="equip__bottom">
+                    <span class="equip__label">Полная стоимость</span>
+                    <span class="equip__price">4 450 руб/мес</span>
+                    <div class="button button--white-mod"><span>Заказать</span></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="equip" href="#">
+                  <div class="equip__photo">
+                    <img src="./img/equip/1.jpg" alt="фото оборудования" width="304" loading="lazy">
+                  </div>
+                  <p class="equip__subtitle">Wi-Fi роутер</p>
+                  <h3 class="equip__title">Название оборудования</h3>
+                  <ul class="equip__list">
+                    <li>Скорость соединения: <span>300 Мбит/с</span>
+                    </li>
+                    <li>Площадь покрытия: <span>70 кв. м.</span></li>
+                    <li>Онлайн одновременно: <span>10 устройств</span></li>
+                  </ul>
+                  <div class="equip__bottom">
+                    <span class="equip__label">Аренда</span>
+                    <span class="equip__price">450 руб/мес</span>
+                    <div class="button button--white-mod"><span>Заказать</span></div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <button class="button button--slider prev" type="button"></button>
+        <button class="button button--slider next" type="button"></button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Помощь</h3>
+          <div class="footer__support-grid">
+            <ul>
+              <li>
+                <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              </li>
+              <li>
+                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Частые вопросы</a>
+              </li>
+              <li>
+                <a href="#">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+          <ul class="footer__buttons">
+            <li>
+              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span>Заказать звонок</span></a>
+            </li>
+          </ul>
+
+          <div class="footer__copyright">
+            <span>© Skytelecom 2022.</span> Создание сайта - <a href="https://very-good.ru/"
+              target="_blank">Very-good</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./libs/smoothscroll.min.js"></script>
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+
+  <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -75,3 +75,33 @@ const swiper3 = new Swiper(".equips .swiper", {
     }
   }
 });
+
+// мелкий слайдер  
+const swiper4 = new Swiper(".mySwiper2", {
+  // slidesPerView: 6,
+  // loop: true,
+  spaceBetween: 8,
+  clickable: true,
+  direction: 'vertical',
+  freeMode: true,
+  watchSlidesProgress: true,
+
+});
+
+// большой слайдер  
+const swiper5 = new Swiper(".mySwiper1", {
+  slidesPerView: 1,
+  spaceBetween: 32,
+  // loop: true,
+  navigation: {
+    nextEl: ".mySwiper1 .swiper-button-next",
+    prevEl: ".mySwiper1 .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper4,
+  },
+});
+
+// синхронизируем два слайдера между собой
+// swiper4.controller.control = swiper5
+// swiper5.controller.control = swiper4
