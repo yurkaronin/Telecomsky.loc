@@ -1,0 +1,50 @@
+.pagination {
+  &__list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  &__link {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ef3024;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    &--text {
+      width: max-content;
+      background: #ef3024;
+      color: #ffffff;
+      padding: 12px 62px;
+      margin: 0 24px;
+
+      svg {
+        display: none;
+      }
+
+    }
+
+    &--dotted {
+      color: #28303d;
+      border-color: transparent;
+    }
+    &.active {
+      color: #28303d;
+      border-color: transparent;
+      font-weight: 500;
+      background: #F7F8FB;
+    }
+  }
+}

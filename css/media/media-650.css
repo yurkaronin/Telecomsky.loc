@@ -120,4 +120,25 @@
   .mobile-nivigation__buttons .button {
     padding: 11px 20px;
   }
+  .offers {
+    padding: 20px 0;
+  }
+  .offers__list {
+    grid-template-columns: 1fr;
+  }
+  .pagination__link {
+    width: 40px;
+    height: 40px;
+  }
+  .pagination__link--text {
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+  }
+  .pagination__link--text svg {
+    display: block;
+  }
 }

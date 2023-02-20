@@ -134,4 +134,28 @@
       padding: 11px 20px;
     }
   }
+  // список акций
+  .offers {
+    padding: 20px 0;
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+  // пагинация
+  .pagination__link {
+    width: 40px;
+    height: 40px;
+  }
+  .pagination__link--text {
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+
+    svg {
+      display: block;
+    }
+  }
 }

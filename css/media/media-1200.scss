@@ -23,3 +23,17 @@
     grid-template-columns: 1fr;
   }
 }
+
+// список акций 
+.offers {
+  padding: 48px 0 32px;
+  &__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// пагинация 
+.pagination__link--text {
+  padding: 12px 24px;
+  margin: 0;
+}

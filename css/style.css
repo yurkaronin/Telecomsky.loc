@@ -1760,3 +1760,61 @@ input[type=radio].visually-hidden {
 .channels details[open] img {
   background: #d6f1ff;
 }
+
+.offers {
+  padding: 52px 0 52px;
+}
+.offers__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pagination__list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.pagination__link {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ef3024;
+  border-radius: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__link--text {
+  width: max-content;
+  background: #ef3024;
+  color: #ffffff;
+  padding: 12px 62px;
+  margin: 0 24px;
+}
+.pagination__link--text svg {
+  display: none;
+}
+.pagination__link--dotted {
+  color: #28303d;
+  border-color: transparent;
+}
+.pagination__link.active {
+  color: #28303d;
+  border-color: transparent;
+  font-weight: 500;
+  background: #F7F8FB;
+}

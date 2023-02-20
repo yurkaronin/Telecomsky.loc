@@ -6,53 +6,390 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Акции</title>
+  <!-- <base href="http://127.0.0.12:5500/"> -->
 
-  <link rel="stylesheet" href="libs/normalize.min.css">
-  <!-- содержит условие подключения файла со стилями для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    if (document.querySelector('.swiper')) {
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "libs/swiper-bundle.min.css";
-      document.head.appendChild(link);
-    }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="stylesheet" href="css/media/media-1024.css" media="screen and (max-width: 1024px)" />
-  <link rel="stylesheet" href="css/media/media-768.css" media="screen and (max-width: 768px)" />
-  <link rel="stylesheet" href="css/media/media-375.css" media="screen and (max-width: 375px)" />
-  <link rel="stylesheet" href="css/media/media-320.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)">
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="./css/media/media-1200.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)">
+  <link rel="stylesheet" href="./css/media/media-550.css" media="screen and (max-width: 550px)">
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
+  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
 </head>
 
 <body>
+  <!-- Шапка  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
 
-  <main>
-    <h1>Акции</h1>
+          <div class="header__phone">
+            <a class="phone" href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
+        </div>
 
-    
+      </div>
+      <div class="header__bottom">
+        <a href="/" class="header__logo">
+          <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
+        </a>
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Оборудование</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- мобильное меню  -->
+  <div class="mobile-nivigation">
+    <div class="wrapper">
+      <ul class="navigation-list">
+        <li>
+          <a href="#"><span>Интернет</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Телевидение</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Оборудование</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Акции</span></a>
+        </li>
+        <li>
+          <a href="#"><span>О компании</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Контакты</span></a>
+        </li>
+      </ul>
+      <div class="mobile-nivigation__support">
+        <h3 class="mobile-nivigation__title">Помощь</h3>
+        <div class="mobile-nivigation__support-grid">
+          <ul>
+            <li>
+              <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li>
+              <a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="mobile-nivigation__contact-flex">
+        <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="mobile-nivigation__buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Вход</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <!-- первый экран на главной  -->
+    <section class="hero hero--inner">
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="hero__content">
+          <h1 class="title title--mod">Акции</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Все акции и спец предложения</h2>
+
+        <ul class="offers__list">
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-1.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-2.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-3.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-2.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-3.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-1.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-1.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-2.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+          <li>
+            <div class="slider-promo__card">
+              <div class="slider-promo__image">
+                <img src="./img/promo-3.jpg" alt="фото акции" loading="lazy" width="264">
+              </div>
+              <span class="slider-promo__data">c 12 января по 12 мая, 2023</span>
+              <h3 class="slider-promo__title">Первые 3 месяца за 300 рублей</h3>
+              <p class="slider-promo__text">Пример описания акции, небольшое буквально пару строк</p>
+              <a class="button button--ghost" href="#"><span>Выбрать тарифы </span></a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="pagination">
+      <div class="wrapper">
+        <ul class="pagination__list">
+          <li><a class="button pagination__link  pagination__link--text" href="#"><span>Предыдущая</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none"><path stroke="#fff" stroke-width="2" d="M10 17 2 9l8-8"/></svg>
+          </a></li>
+
+          <li><a class="pagination__link" href="#">1</a></li>
+          <li><a class="pagination__link active" href="#">2</a></li>
+          <li><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item pagination__item--768"><a class="pagination__link" href="#">4</a></li>
+          <li><a class="pagination__link pagination__link--dotted" href="#">...</a></li>
+          <li><a class="pagination__link" href="#">9</a></li>
+          
+          <li><a class="button pagination__link  pagination__link--text" href="#"><span>Следующая</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none"><path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8"/></svg></a></li>
+        </ul>
+      </div>
+    </section>
+
+
   </main>
 
-  <!-- содержит условие подключения файла со скриптами для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    var links = document.getElementsByTagName("link");
-    var isStylesheetIncluded = false;
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Помощь</h3>
+          <div class="footer__support-grid">
+            <ul>
+              <li>
+                <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              </li>
+              <li>
+                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Частые вопросы</a>
+              </li>
+              <li>
+                <a href="#">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+          <ul class="footer__buttons">
+            <li>
+              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span>Заказать звонок</span></a>
+            </li>
+          </ul>
 
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].href === "libs/swiper-bundle.min.css") {
-        isStylesheetIncluded = true;
-        break;
-      }
-    }
+          <div class="footer__copyright">
+            <span>© Skytelecom 2022.</span> Создание сайта - <a href="https://very-good.ru/"
+              target="_blank">Very-good</a>
+          </div>
+        </div>
 
-    if (isStylesheetIncluded) {
-      var script = document.createElement("script");
-      script.src = "./libs/swiper-bundle.min.js";
-      document.head.appendChild(script);
-    }
-  </script>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="./libs/smoothscroll.min.js"></script>
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+
   <script src="./js/scripts.js"></script>
 
 </body>
