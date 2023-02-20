@@ -6,53 +6,315 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Акция</title>
+  <!-- <base href="http://127.0.0.12:5500/"> -->
 
-  <link rel="stylesheet" href="libs/normalize.min.css">
-  <!-- содержит условие подключения файла со стилями для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    if (document.querySelector('.swiper')) {
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "libs/swiper-bundle.min.css";
-      document.head.appendChild(link);
-    }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="stylesheet" href="css/media/media-1024.css" media="screen and (max-width: 1024px)" />
-  <link rel="stylesheet" href="css/media/media-768.css" media="screen and (max-width: 768px)" />
-  <link rel="stylesheet" href="css/media/media-375.css" media="screen and (max-width: 375px)" />
-  <link rel="stylesheet" href="css/media/media-320.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)">
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="./css/media/media-1200.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)">
+  <link rel="stylesheet" href="./css/media/media-550.css" media="screen and (max-width: 550px)">
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
+  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
 </head>
 
 <body>
+  <!-- Шапка  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
 
-  <main>
-    <h1>Акция</h1>
+          <div class="header__phone">
+            <a class="phone" href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
+        </div>
 
-    
+      </div>
+      <div class="header__bottom">
+        <a href="/" class="header__logo">
+          <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
+        </a>
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Оборудование</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- мобильное меню  -->
+  <div class="mobile-nivigation">
+    <div class="wrapper">
+      <ul class="navigation-list">
+        <li>
+          <a href="#"><span>Интернет</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Телевидение</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Оборудование</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Акции</span></a>
+        </li>
+        <li>
+          <a href="#"><span>О компании</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Контакты</span></a>
+        </li>
+      </ul>
+      <div class="mobile-nivigation__support">
+        <h3 class="mobile-nivigation__title">Помощь</h3>
+        <div class="mobile-nivigation__support-grid">
+          <ul>
+            <li>
+              <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li>
+              <a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="mobile-nivigation__contact-flex">
+        <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="mobile-nivigation__buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Вход</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <!-- первый экран на главной  -->
+    <section class="hero hero--inner">
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="hero__content">
+          <h1 class="title title--mod">Интернет за 1 рубль навсегда</h1>
+          <a href="#" class="button button--clear"><span>Назад к списку</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="wrapper">
+        <div class="container">
+          <img src="./img/content/1.jpg" alt="картинка акции" loading="lazy" width="992">
+
+          <p>SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.</p>
+          <h2>Пример заголовка контентной страницы</h2>
+          <p>SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.</p>
+          <h3>Пример заголовка контентной страницы</h3>
+          <p>SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение. SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.</p>
+
+          <ul>
+            <li>lorem12</li>
+            <li>lorem12</li>
+            <li>lorem12</li>
+            <li>lorem12</li>
+            <li>lorem12</li>
+          </ul>
+
+          <h1>Пример большого заголовка контентной страницы</h1>
+
+          <p>SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение. SkyTelecom подключает, настраивает и технически поддерживает телекоммуникационную инфраструктуру организаций в г. Краснодаре. Когда нужна устойчивая и качественная телефонная связь, высокоскоростной доступ в интернет или распределение звонков в отделе продаж, необходимо комплексное сопровождение.</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="promo promo--one">
+      <div class="wrapper">
+        <div class="promo__grid">
+          <div class="promo__image">
+            <img src="./img/promo/1.png" alt="роутер" width="480" loading="lazy">
+          </div>
+          <div class="promo__details">
+            <h2 class="promo__title">Подключить интернет</h2>
+            <form action="">
+              <div class="promo__form">
+
+                <div class="promo__form-item">
+                  <label for="promo-form-name">Ваш телефон:</label>
+                  <input id="promo-form-name" type="tel" name="user-phone" placeholder="Введите телефон" required="">
+                </div>
+
+                <div class="promo__form-item">
+                  <label for="promo-form-tel">Представьтесь, пожалуйста:</label>
+                  <input id="promo-form-tel" type="text" name="username" placeholder="Введите имя">
+                </div>
+
+                <div class="promo__form-item promo__form-item--check">
+                  <input type="checkbox" name="user-consent" id="promo-form-consent" checked="">
+                  <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных данных</a></label>
+                </div>
+
+                <button class="button" type="submit"><span>Отправить</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+
+
   </main>
 
-  <!-- содержит условие подключения файла со скриптами для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    var links = document.getElementsByTagName("link");
-    var isStylesheetIncluded = false;
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Помощь</h3>
+          <div class="footer__support-grid">
+            <ul>
+              <li>
+                <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              </li>
+              <li>
+                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Частые вопросы</a>
+              </li>
+              <li>
+                <a href="#">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+          <ul class="footer__buttons">
+            <li>
+              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span>Заказать звонок</span></a>
+            </li>
+          </ul>
 
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].href === "libs/swiper-bundle.min.css") {
-        isStylesheetIncluded = true;
-        break;
-      }
-    }
+          <div class="footer__copyright">
+            <span>© Skytelecom 2022.</span> Создание сайта - <a href="https://very-good.ru/"
+              target="_blank">Very-good</a>
+          </div>
+        </div>
 
-    if (isStylesheetIncluded) {
-      var script = document.createElement("script");
-      script.src = "./libs/swiper-bundle.min.js";
-      document.head.appendChild(script);
-    }
-  </script>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="./libs/smoothscroll.min.js"></script>
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+
   <script src="./js/scripts.js"></script>
 
 </body>

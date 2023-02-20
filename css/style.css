@@ -908,6 +908,11 @@ input[type=radio].visually-hidden {
   margin: 0;
 }
 
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
 .header {
   padding: 16px 0;
   border-bottom: 1px solid;
@@ -1817,4 +1822,21 @@ input[type=radio].visually-hidden {
   border-color: transparent;
   font-weight: 500;
   background: #F7F8FB;
+}
+
+.page-content {
+  padding: 56px 0 32px;
+  font-size: 16px;
+  color: #727881;
+}
+.page-content img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.page-content p {
+  font-size: 16px;
+  color: #727881;
+}
+.page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
+  color: #28303d;
 }

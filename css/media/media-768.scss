@@ -26,6 +26,10 @@
   }
 }
 
+.hero--inner {
+  padding-bottom: 0;
+}
+
 @media (max-width: 760px) {
   .filter__flex {
     display: grid;
