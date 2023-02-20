@@ -1851,3 +1851,65 @@ input[type=radio].visually-hidden {
   font-size: 18px;
   color: #28303d;
 }
+
+.contacts {
+  padding-top: 56px;
+}
+.contacts__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+.contacts__content {
+  height: 448px;
+  width: 100%;
+}
+.contacts__details p {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #28303d;
+}
+.contacts__details p span {
+  display: block;
+  font-size: 16px;
+  color: #4f5661;
+}
+.contacts__details a {
+  font-weight: 600;
+  font-size: 20px;
+  color: #28303d;
+  transition: all 0.3s;
+}
+.contacts__details a:hover {
+  color: #c70000;
+}
+.contacts__button {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts .button {
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.contacts .button--icon-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts .button--icon-left svg {
+  margin-right: 12px;
+}
+.contacts .button:hover {
+  color: #ffffff;
+}
+.contacts .button--transparent {
+  max-width: 100%;
+  color: #c70000;
+  margin-top: 32px;
+}

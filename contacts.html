@@ -6,53 +6,284 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты</title>
+  <!-- <base href="http://127.0.0.12:5500/"> -->
 
-  <link rel="stylesheet" href="libs/normalize.min.css">
-  <!-- содержит условие подключения файла со стилями для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    if (document.querySelector('.swiper')) {
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "libs/swiper-bundle.min.css";
-      document.head.appendChild(link);
-    }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-  <link rel="stylesheet" href="css/media/media-1024.css" media="screen and (max-width: 1024px)" />
-  <link rel="stylesheet" href="css/media/media-768.css" media="screen and (max-width: 768px)" />
-  <link rel="stylesheet" href="css/media/media-375.css" media="screen and (max-width: 375px)" />
-  <link rel="stylesheet" href="css/media/media-320.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="./css/media/media-1600.css" media="screen and (max-width: 1600px)">
+  <link rel="stylesheet" href="./css/media/media-1400.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="./css/media/media-1200.css" media="screen and (max-width: 1200px)">
+  <link rel="stylesheet" href="./css/media/media-1024.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="./css/media/media-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./css/media/media-650.css" media="screen and (max-width: 650px)">
+  <link rel="stylesheet" href="./css/media/media-550.css" media="screen and (max-width: 550px)">
+  <link rel="stylesheet" href="./css/media/media-450.css" media="screen and (max-width: 450px)">
+  <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
+  <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
 </head>
 
 <body>
+  <!-- Шапка  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <div class="header__top-left">
+          <span class="header__city">Краснодар</span>
+        </div>
+        <div class="header__top-right">
+          <div class="header__social">
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--whatsapp" href="#"><span>WhatsApp</span></a>
+              </li>
+              <li class="header__social-item">
+                <a class="header__social-link header__social-link--telegram" href="#"><span>Telegram</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__support">
+            <details>
+              <summary>Помощь</summary>
+              <ul class="header__support-list">
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Инструкции</a></li>
+              </ul>
+            </details>
+          </div>
 
-  <main>
-    <h1>Контакты</h1>
+          <div class="header__phone">
+            <a class="phone" href="tel:+78005111205">+7 800 511 12 05</a>
+          </div>
+        </div>
 
+      </div>
+      <div class="header__bottom">
+        <a href="/" class="header__logo">
+          <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
+        </a>
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Оборудование</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="button button--transparent" href="#"><span>Войти</span></a>
+          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <button class="button button--menu" type="button">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- мобильное меню  -->
+  <div class="mobile-nivigation">
+    <div class="wrapper">
+      <ul class="navigation-list">
+        <li>
+          <a href="#"><span>Интернет</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Телевидение</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Оборудование</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Акции</span></a>
+        </li>
+        <li>
+          <a href="#"><span>О компании</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Контакты</span></a>
+        </li>
+      </ul>
+      <div class="mobile-nivigation__support">
+        <h3 class="mobile-nivigation__title">Помощь</h3>
+        <div class="mobile-nivigation__support-grid">
+          <ul>
+            <li>
+              <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+            </li>
+            <li>
+              <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Частые вопросы</a>
+            </li>
+            <li>
+              <a href="#">Инструкции</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="mobile-nivigation__contact-flex">
+        <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+        <ul class="mobile-nivigation__buttons">
+          <li>
+            <a class="button button--transparent" href="#"><span>Вход</span></a>
+          </li>
+          <li>
+            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <!-- первый экран на главной  -->
+    <section class="hero hero--inner">
+      <div class="hero__video">
+        <video autoplay loop muted playsinline poster="./img/bg/hero.jpg">
+          <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="hero__content">
+          <h1 class="title title--mod">Контакты</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="wrapper">
+        <div class="contacts__grid">
+          <!-- карта  -->
+          <div class="contacts__map">
+            <div class="" id="map"></div>
+          </div>
+          <!-- контактная информация  -->
+          <div class="contacts__details">
+            
+            <p><span>Адрес:</span>
+              350004, г. Краснодар, ул. Кожевенная 38, 4 этаж, оф. 401</p>
+            
+            <p><span>Телефон:</span>
+              <a href="tel:+78612995151">+7 (861) 299-51-51</a>,
+              <a href="tel:88005111205">8 (800) 511-12-05</a>
+            </p>
+            
+            <p><span>Время работы:</span>
+              пн-пт 9:00- 18:00</p>
+
+              <div class="contacts__button">
+                <a class="button button--icon-left" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="M23.074 7.15a11.788 11.788 0 0 0-2.528-3.72A11.851 11.851 0 0 0 16.798.92 11.816 11.816 0 0 0 12.214 0C10.588 0 9.039.328 7.63.92a11.85 11.85 0 0 0-3.748 2.51 11.721 11.721 0 0 0-2.528 3.72 11.564 11.564 0 0 0-.824 6.102 11.674 11.674 0 0 0 1.512 4.364l-.506 1.493-.506 1.492-.506 1.494-.506 1.493a.295.295 0 0 0-.01.17.286.286 0 0 0 .081.15c.015.015.031.027.049.039a.243.243 0 0 0 .054.029.42.42 0 0 0 .12.024l.024-.001.024-.003.024-.004.024-.007 1.556-.494 1.556-.495 1.558-.495 1.556-.494a11.861 11.861 0 0 0 5.58 1.39 11.793 11.793 0 0 0 8.332-3.43 11.752 11.752 0 0 0 2.528-3.719c.596-1.399.926-2.936.926-4.55 0-1.611-.33-3.149-.926-4.549Zm-4.724 7.662a4.023 4.023 0 0 1-.213.941 1.666 1.666 0 0 1-.38.576c-.17.179-.377.339-.591.476a3.94 3.94 0 0 1-.648.334 2.028 2.028 0 0 1-.544.146l-.022.002-.021.002-.023.003-.022.001-.104.011-.115.01a3.12 3.12 0 0 1-.125.006c-.043.001-.088.003-.136.003h-.002c-.113 0-.249-.006-.416-.024a5.336 5.336 0 0 1-.596-.1 9.354 9.354 0 0 1-.828-.228c-.321-.103-.689-.235-1.112-.404a8.248 8.248 0 0 1-1.31-.674c-.432-.272-.859-.59-1.272-.95-.415-.36-.818-.76-1.203-1.198a14.841 14.841 0 0 1-1.103-1.422c-.006-.008-.012-.018-.017-.023l-.013-.021-.011-.016a7.225 7.225 0 0 1-.75-1.228 5.265 5.265 0 0 1-.331-.882 3.726 3.726 0 0 1-.139-.976c0-.37.045-.701.117-.993.072-.292.175-.544.29-.759.116-.216.244-.392.37-.53.126-.139.25-.243.354-.308.098-.063.228-.116.37-.163.142-.045.296-.084.443-.115.147-.03.287-.054.4-.07a2.796 2.796 0 0 1 .315-.031l.032-.001H9.023c.087 0 .167.013.243.038a.713.713 0 0 1 .209.123c.064.055.124.123.18.205.056.083.107.183.153.295l.162.388.281.679.275.657c.077.183.13.31.141.33.012.025.032.062.05.11a.845.845 0 0 1 .054.399.827.827 0 0 1-.08.26l-.01.018-.01.02-.01.02-.01.019c-.019.039-.036.076-.055.11a1.24 1.24 0 0 1-.061.11 1.561 1.561 0 0 1-.072.112c-.028.037-.059.079-.095.12l-.034.04a1.042 1.042 0 0 0-.072.085l-.036.043-.075.09-.076.089-.075.084-.073.076-.028.028-.032.036a.29.29 0 0 0-.028.032.077.077 0 0 0-.013.025v.004l.002.013a.069.069 0 0 0 .01.022 5.796 5.796 0 0 0 .38.541c.19.244.445.544.753.861.308.316.67.648 1.07.952a6.422 6.422 0 0 0 1.398.82c.037.016.081.032.12.05.04.016.079.029.107.041.028.01.049.019.052.019.005 0 .01-.003.016-.006.005-.002.01-.008.018-.013l.019-.017.016-.019.18-.208c.076-.087.164-.19.25-.296.089-.104.177-.212.253-.31.076-.097.141-.185.185-.249a.912.912 0 0 1 .265-.261.613.613 0 0 1 .326-.09.722.722 0 0 1 .209.03c.033.008.067.019.1.028.032.01.065.023.096.032.079.028.247.103.455.2a103.827 103.827 0 0 1 1.347.647l.305.148.162.081c.05.027.098.052.14.081a.59.59 0 0 1 .21.208.66.66 0 0 1 .077.267c.015.113.015.245.003.388Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+                  <span>WhatsApp</span></a>
+                <a class="button button--icon-left" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="M12.5 24c6.628 0 12-5.372 12-12s-5.372-12-12-12S.5 5.372.5 12s5.372 12 12 12Z"/><path fill="#C70000" d="m5.655 11.896 8.083-3.33c.797-.346 3.502-1.457 3.502-1.457s1.25-.485 1.144.695c-.034.485-.31 2.185-.589 4.024l-.867 5.445s-.069.798-.658.936c-.59.139-1.562-.485-1.735-.625-.139-.104-2.6-1.664-3.503-2.427-.244-.208-.52-.625.035-1.11 1.25-1.144 2.74-2.567 3.64-3.468.417-.418.832-1.388-.901-.208l-4.89 3.296s-.554.346-1.596.033c-1.04-.31-2.253-.728-2.253-.728s-.833-.521.588-1.076Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.5 0h24v24H.5z"/></clipPath></defs></svg>
+                  <span>Telegram</span></a>
+              </div>
+              <a href="#" class="button button--transparent"><span>Написать сообщение</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <!-- содержит условие подключения файла со скриптами для слайдеров, что бы не подключать этот файл на страницах, которые не содержат слайдеры  -->
-  <script>
-    var links = document.getElementsByTagName("link");
-    var isStylesheetIncluded = false;
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Интернет</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Телевидение</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Оборудование</span></a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>О компании</span></a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"><span>Контакты</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__support">
+          <h3 class="footer__title">Помощь</h3>
+          <div class="footer__support-grid">
+            <ul>
+              <li>
+                <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
+              </li>
+              <li>
+                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Частые вопросы</a>
+              </li>
+              <li>
+                <a href="#">Инструкции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
+          <ul class="footer__buttons">
+            <li>
+              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+            </li>
+            <li>
+              <a class="button" href="#"><span>Заказать звонок</span></a>
+            </li>
+          </ul>
 
-    for (var i = 0; i < links.length; i++) {
-      if (links[i].href === "libs/swiper-bundle.min.css") {
-        isStylesheetIncluded = true;
-        break;
-      }
-    }
+          <div class="footer__copyright">
+            <span>© Skytelecom 2022.</span> Создание сайта - <a href="https://very-good.ru/"
+              target="_blank">Very-good</a>
+          </div>
+        </div>
 
-    if (isStylesheetIncluded) {
-      var script = document.createElement("script");
-      script.src = "./libs/swiper-bundle.min.js";
-      document.head.appendChild(script);
-    }
-  </script>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="./libs/smoothscroll.min.js"></script>
+  <!-- подключаем эту библиотеку только на тех страницах, на которых есть слайдеры  -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+
   <script src="./js/scripts.js"></script>
 
 </body>
