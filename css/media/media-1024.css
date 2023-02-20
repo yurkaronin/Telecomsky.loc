@@ -35,3 +35,9 @@
     max-width: max-content;
   }
 }
+.contacts {
+  padding-top: 56px;
+}
+.contacts__grid {
+  grid-template-columns: 1fr;
+}

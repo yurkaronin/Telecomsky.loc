@@ -1861,7 +1861,14 @@ input[type=radio].visually-hidden {
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
 }
-.contacts__content {
+.contacts__map {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contacts__map .map__content {
   height: 448px;
   width: 100%;
 }

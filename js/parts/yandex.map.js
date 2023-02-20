@@ -1,5 +1,6 @@
 if (document.querySelector('.map')) {
-  let center = [45.13542039095159, 39.02629313757318];
+  let center = [45.03829857457713,38.946593999999884];
+  
 
   function init() {
 
@@ -8,7 +9,7 @@ if (document.querySelector('.map')) {
       zoom: 17
     });
 
-    let placemarRkschool = new ymaps.Placemark([45.13542039095159, 39.02629313757318], {}, {
+    let placemarRkschool = new ymaps.Placemark([45.03829857457713,38.946593999999884], {}, {
       iconLayout: 'default#image', /* говорим что будем отображать на карте в качестве геометки  */
       iconImageHref: './img/map/balun.svg', /* указываем пусть к картинке на нашем сайте  */
       iconImageSize: [48, 64], /* размеры картинки  */

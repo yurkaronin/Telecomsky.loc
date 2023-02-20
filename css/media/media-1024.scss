@@ -40,3 +40,11 @@
     max-width: max-content;
   }
 }
+
+// блок с контактами 
+.contacts {
+  padding-top: 56px;
+  &__grid {
+    grid-template-columns: 1fr;
+  }
+}
