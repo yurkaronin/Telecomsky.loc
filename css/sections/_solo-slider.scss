@@ -1,13 +1,15 @@
 .solo-slider {
+  display: block;
+  margin-bottom: 32px;
   &__grid {
     display: grid;
     gap: 32px;
-    grid-template-columns: 7fr 1fr;
+    grid-template-columns: 1fr 96px;
     max-width: 100%;
     width: 100%;
-    max-height: 616px;
     overflow: hidden;
     align-items: flex-start;
+    justify-content: space-between;
   }
   &__left {
     display: block;
@@ -26,6 +28,7 @@
       width: 100%;
       padding: 23px;
       background-color: #fff;
+      height: initial !important;
       img {
         display: block;
         object-fit: cover;
@@ -38,18 +41,18 @@
   }
   &__right {
     display: block;
-    // overflow: hidden;
-    
-    .swiper {
-      padding-left: 23px;
-      height: 100%;
+    margin-left: auto;
 
+    .swiper {
+      // padding-left: 23px;
+      overflow: initial;
     }
 
     .swiper-slide {
       padding: 10px;
       max-width: 96px;
       position: relative;
+      height: initial !important;
       img {
         display: block;
         width: 80px;
@@ -79,6 +82,35 @@
         left: -12px;
         transform: rotate(45deg);
       }
+    }
+  }
+
+  .button--slider {
+    width: 64px;
+    height: 64px;
+    border-color: #ef3024;
+    background-color: #ef3024;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: 24px;
+    z-index: 99;
+
+    &::after {
+      display: none;
+    }
+    svg {
+      width: 20px;
+      height: 37px;
+      pointer-events: none;
+    }
+
+    &.next {
+      left: auto;
+      right: 24px;
+    }
+    &:hover {
+      border-color: #c70000;
+      background-color: #c70000;
     }
   }
 }

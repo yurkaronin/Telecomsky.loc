@@ -26,4 +26,8 @@
     margin-top: initial;
     position: initial;
   }
+  .solo-slider__left .swiper-slide img {
+    max-height: 520px;
+    object-fit: contain;
+  }
 }

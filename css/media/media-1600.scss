@@ -30,26 +30,9 @@
       position: initial;
     }
   }
-  // .connection-request {
-  //   &__details {
-  //     li {
-  //       justify-content: flex-start;
+  .solo-slider__left .swiper-slide img {
+    max-height: 520px;
+    object-fit: contain;
+  }
 
-  //       strong {
-  //         margin-left: 16px;
-  //       }
-  //     }
-  //   }
-  //   &__price {
-  //     justify-content: flex-start;
-  //     li {
-  //       max-width: max-content;
-  //       strong {
-  //         display: initial;
-  //         margin-left: 16px;
-  //       }
-  //     }
-  //   }
-
-  // }
 }

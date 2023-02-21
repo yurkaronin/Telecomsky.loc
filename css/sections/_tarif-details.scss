@@ -28,11 +28,10 @@
     }
   }
 
-  // &__grid-content {
-  //   display: block;
-  //   max-width: 100%;
-  //   width: 100%;
-  //   overflow: hidden;
-  // }
+  &__grid-content {
+    .faq__list {
+      margin-top: 32px;
+    }
+  }
 
 }

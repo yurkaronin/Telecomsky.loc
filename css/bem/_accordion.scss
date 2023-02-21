@@ -1,0 +1,139 @@
+.accordions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion {
+  background: #ffffff;
+  border-radius: 0;
+  padding: 7px 16px;
+  color: #4f5661;
+  border: 1px solid #dcdcdf;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s;
+
+  &__question {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    // padding: 14px 0 17px;
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    grid-template-columns: 48px 1fr;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    margin: 0;
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(40, 48, 61, 0.9);
+  }
+  &__text {
+    margin-top: 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .move {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  &__answer {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    padding-left: 65px;
+    padding-right: 0;
+    font-size: 16px;
+  }
+  &__list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    li {
+      margin-bottom: 16px;
+    }
+  }
+  & + & {
+    border-top: 1px solid transparent;
+  }
+}
+
+.accordion {
+  &:hover {
+    border-radius: 20px;
+    border-top: 1px solid #d6f1ff;
+    border-left: 1px solid #d6f1ff;
+    border-right: 1px solid #d6f1ff;
+    border-color: #d6f1ff;
+    background-color: #d6f1ff;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: #ffffff;
+      top: -3px;
+      z-index: 0;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.accordion.active {
+  border-radius: 20px;
+  border-top: 1px solid #d6f1ff;
+  border-left: 1px solid #d6f1ff;
+  border-right: 1px solid #d6f1ff;
+  border-color: #d6f1ff;
+  background-color: #d6f1ff;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #ffffff;
+    top: -3px;
+    z-index: 0;
+    transition: all 0.3s;
+  }
+
+  .accordion__answer {
+    opacity: 1;
+    max-height: 1000px;
+    transition: all 0.3s ease-in-out;
+  }
+  .move {
+    opacity: 0;
+  }
+  & + .accordion {
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
+  .accordion__answer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

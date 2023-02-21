@@ -140,4 +140,8 @@
   .pagination__link--text svg {
     display: block;
   }
+  .solo-slider .button--slider {
+    opacity: 1;
+    pointer-events: initial;
+  }
 }

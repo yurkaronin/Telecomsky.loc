@@ -2,6 +2,7 @@
 const swiper = new Swiper(".slider-promo .swiper", {
   slidesPerView: 3,
   spaceBetween: 32,
+  grabCursor: true,
   // autoHeight: true,
   navigation: {
     nextEl: ".slider-promo .button--slider.next",
@@ -24,6 +25,7 @@ const swiper = new Swiper(".slider-promo .swiper", {
 const swiper2 = new Swiper(".rates .swiper", {
   slidesPerView: 4,
   spaceBetween: 32,
+  grabCursor: true,
   // calculateHeight:true,
   // autoHeight: true,
   navigation: {
@@ -50,6 +52,7 @@ const swiper2 = new Swiper(".rates .swiper", {
 const swiper3 = new Swiper(".equips .swiper", {
   slidesPerView: 4,
   spaceBetween: 32,
+  grabCursor: true,
   // calculateHeight:true,
   // autoHeight: true,
   navigation: {
@@ -78,7 +81,7 @@ const swiper3 = new Swiper(".equips .swiper", {
 
 // мелкий слайдер  
 const swiper4 = new Swiper(".mySwiper2", {
-  // slidesPerView: 6,
+  slidesPerView: 12,
   // loop: true,
   spaceBetween: 8,
   clickable: true,
@@ -92,10 +95,11 @@ const swiper4 = new Swiper(".mySwiper2", {
 const swiper5 = new Swiper(".mySwiper1", {
   slidesPerView: 1,
   spaceBetween: 32,
-  // loop: true,
+  grabCursor: true,
+  loop: true,
   navigation: {
-    nextEl: ".mySwiper1 .swiper-button-next",
-    prevEl: ".mySwiper1 .swiper-button-prev",
+    nextEl: ".mySwiper1 .button--slider.next",
+    prevEl: ".mySwiper1 .button--slider.prev",
   },
   thumbs: {
     swiper: swiper4,

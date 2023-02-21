@@ -28,6 +28,11 @@
   }
 }
 
+.solo-slider__grid {
+  gap: 32px;
+  grid-template-columns: 1fr 96px;
+}
+
 @media (max-width: 1023px) {
   .filter__flex {
     display: grid;
