@@ -1,5 +1,3 @@
-// Глобальные переменные пишем ниже
-
 // Функции
 // функция подключения скриптов
 function includeFiles(url) {
@@ -29,15 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // подключаем файлы тут
-  includeFiles("./js/parts/navigation-copy.js");
+  includeFiles("./js/parts/mobile-menu-show.js");
   includeFiles("./js/parts/smoothscroll.js");
   includeFiles("./js/parts/yandex.map.js");
   includeFiles("./js/parts/swiper-collection.js");
-  includeFiles("./js/parts/faqlist.js");
   includeFiles("./js/parts/accordion.js");
   includeFiles("./js/parts/input-phone-mask.js");
   includeFiles("./js/parts/button-add.js");
   includeFiles("./js/parts/channel-details.js");
+  includeFiles("./js/parts/modals.js");
+
 
 
   // небольшие программы

@@ -1,0 +1,86 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#ffffff, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.modal {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  display: none;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  width: 100%;
+  max-width: 736px;
+  padding: 26px 40px 40px;
+  background-color: #d6f1ff;
+  border-radius: 20px;
+  color: rgba(#4f5661, 0.8);
+  z-index: 9999;
+
+  .title {
+    margin: 0;
+    display: block;
+    margin-bottom: 12px;
+    margin-right: 42px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #28303d;
+  }
+  .subtitle {
+    margin: 0;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .close-btn {
+    display: block;
+    width: 48px;
+    height: 48px;
+    max-width: initial;
+    margin: auto;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    svg {
+      pointer-events: none;
+      flex-shrink: 0;
+    }
+    &:hover {
+      background-color: #c70000;
+      border-color: #c70000;
+
+      svg {
+        path {
+          stroke: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// при показе окна 
+.overlay-show {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}

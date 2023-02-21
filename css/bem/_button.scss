@@ -12,9 +12,10 @@
   border-color: #ef3024;
   max-width: max-content;
   transition: all 0.3s;
-  // span {
-  //   color: inherit;
-  // }
+  cursor: pointer;
+  span {
+    pointer-events: none;
+  }
 
   &--transparent {
     background-color: transparent;
