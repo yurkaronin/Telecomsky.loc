@@ -15,18 +15,26 @@
 }
 .modal {
   position: fixed;
-  top: 25%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
-  transform: translateX(-50%);
-  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-  width: 100%;
-  max-width: 736px;
-  padding: 26px 40px 40px;
-  background-color: #d6f1ff;
-  border-radius: 20px;
-  color: rgba(#4f5661, 0.8);
   z-index: 9999;
+  padding: 20px;
+  width: 100%;
+  max-width: calc(736px + 40px);
+  max-height: 100vh;
+  overflow: auto;
+
+  &__wrapper {
+    position: relative;
+
+    padding: 26px 40px 40px;
+    background-color: #d6f1ff;
+    border-radius: 20px;
+    color: rgba(#4f5661, 0.8);
+    box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  }
 
   .title {
     margin: 0;
@@ -60,7 +68,7 @@
     svg {
       pointer-events: none;
       flex-shrink: 0;
-      stroke: #EF3024;
+      stroke: #ef3024;
       transition: all 0.5s;
     }
     &:hover {
@@ -75,9 +83,23 @@
       }
     }
   }
+
+  .subtitle--two {
+    margin-bottom: 26px;
+  }
+
+  .connection-request__price {
+    justify-content: flex-start;
+    border-top: 1px solid;
+    border-color: rgba(40, 48, 61, 0.2);
+    margin-bottom: 14px;
+  }
+  .connection-request__price li {
+    text-align: left;
+  }
 }
 
-// при показе окна 
+// при показе окна
 .overlay-show {
   opacity: 1;
   pointer-events: initial;

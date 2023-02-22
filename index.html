@@ -23,10 +23,33 @@
   <link rel="stylesheet" href="./css/media/media-375.css" media="screen and (max-width: 375px)">
   <link rel="stylesheet" href="./css/media/media-320.css" media="screen and (max-width: 320px)">
   <style>
+    .tech-list {
+      padding: 0;
+      margin: 0;
+    }
+
+    .tech-list a {
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #28303d;
+      margin-bottom: 0.5em;
+      max-width: max-content;
+    }
+
     .pulsate {
       -webkit-animation: pulsate 3s ease-out;
       -webkit-animation-iteration-count: infinite;
       opacity: 0.5;
+    }
+
+    .tech-title {
+      margin: 64px 0 12px !important;
+      font-weight: 500;
+      font-size: 30px;
+      /* text-transform: uppercase; */
+      text-decoration: underline;
     }
 
     @-webkit-keyframes pulsate {
@@ -43,6 +66,24 @@
         opacity: 0.5;
         color: #ef3024;
       }
+    }
+
+    .grid-two {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      max-width: max-content;
+
+
+    }
+
+    .grid-two .button {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    main {
+      padding-bottom: 64px;
     }
   </style>
 </head>
@@ -198,6 +239,7 @@
   <main>
     <section class="hero hero--home">
       <div class="wrapper">
+        <h2 class="tech-title">Список страниц</h2>
         <ol class="tech-list">
           <li><a href="./home.html">Главная</a></li>
           <li><a href="./internet.html">Интернет</a></li>
@@ -212,15 +254,26 @@
           <li><a href="./contacts.html">Контакты</a></li>
         </ol>
 
-        <button class="button call-modal" data-dialog-button="modal-1" type="button">
-          <span class="button_text">Вызов окна</span>
-          <span class="button_hover"></span>
-        </button>
+        <h2 class="tech-title">Примеры диалоговых окон</h2>
 
-        <br>
-        <br>
+        <div class="grid-two">
+          <button class="button call-modal" data-dialog-button="modal-1" type="button">
+            <span class="button_text">Подключить тариф</span>
+            <span class="button_hover"></span>
+          </button>
+
+          <button class="button call-modal" data-dialog-button="modal-2" type="button">
+            <span class="button_text">Заявка на подключение</span>
+            <span class="button_hover"></span>
+          </button>
+        </div>
+
+
+
+        <h2 class="tech-title">Пояснения для Андрея</h2>
+
         <details onclick="showPicture()" class="pulsate">
-          <summary>Пояснения для Андрея (про кастомные модалки)</summary>
+          <summary>Про кастомные модалки</summary>
           <h4>Функционал модальных окон задействует следующие элементы:</h4>
           <ol>
             <li>кнопки и ссылки</li>
@@ -241,7 +294,7 @@
         </details>
 
         <details onclick="showPicture()" class="pulsate">
-          <summary>Пояснения для Андрея (про анимацию на кнопках)</summary>
+          <summary>Про анимацию на кнопках</summary>
           <p>В любой кнопке должна соблюдаться вот такая структура:</p>
           <pre>
             <code>
@@ -342,47 +395,102 @@
   <div class="overlay"></div>
 
   <!-- модальное окно  -->
+
+  <!-- подключить тариф  -->
   <section class="modal" data-dialog-modal="modal-1">
+    <div class="modal__wrapper">
+      <h2 class="title">Вы хотите подключить название тарифа, пакета и т д</h2>
+      <p class="subtitle">Заполните простую форму и наши специалисты свяжутся с Вами в ближайшее время для уточнения
+        деталей</p>
 
-    <h2 class="title">Вы хотите подключить название тарифа, пакета и т д</h2>
-    <p class="subtitle">Заполните простую форму и наши специалисты свяжутся с Вами в ближайшее время для уточнения
-      деталей</p>
+      <div class="form">
+        <form action="" method="post">
+          <div class="promo__form">
 
-    <div class="form">
-      <form action="" method="post">
-        <div class="promo__form">
+            <div class="promo__form-item">
+              <label for="promo-form-name">Ваш телефон:</label>
+              <input id="promo-form-name" type="tel" name="user-phone" placeholder="Введите телефон" required="">
+            </div>
 
-          <div class="promo__form-item">
-            <label for="promo-form-name">Ваш телефон:</label>
-            <input id="promo-form-name" type="tel" name="user-phone" placeholder="Введите телефон" required="">
+            <div class="promo__form-item">
+              <label for="promo-form-tel">Представьтесь, пожалуйста:</label>
+              <input id="promo-form-tel" type="text" name="username" placeholder="Введите имя">
+            </div>
+
+            <div class="promo__form-item promo__form-item--check">
+              <input type="checkbox" name="user-consent" id="promo-form-consent" checked="">
+              <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных
+                  данных</a></label>
+            </div>
+
+            <button class="button" type="submit">
+              <span class="button_text">Отправить</span>
+              <span class="button_hover"></span>
+            </button>
           </div>
+        </form>
+      </div>
 
-          <div class="promo__form-item">
-            <label for="promo-form-tel">Представьтесь, пожалуйста:</label>
-            <input id="promo-form-tel" type="text" name="username" placeholder="Введите имя">
-          </div>
-
-          <div class="promo__form-item promo__form-item--check">
-            <input type="checkbox" name="user-consent" id="promo-form-consent" checked="">
-            <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных
-                данных</a></label>
-          </div>
-
-          <button class="button" type="submit">
-            <span class="button_text">Отправить</span>
-            <span class="button_hover"></span>
-          </button>
-        </div>
       </form>
+
+      <button class="button close-btn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+          <path stroke="#EF3024" stroke-width="2" d="m1 1 16 16M17 1 1 17" />
+        </svg>
+      </button>
     </div>
+  </section>
 
-    </form>
+  <!-- Заявка на подключение  -->
+  <section class="modal" data-dialog-modal="modal-2">
+    <div class="modal__wrapper">
+      <h2 class="title">Заявка на подключение</h2>
+      <p class="subtitle">Тариф Sky home TV 300, Wi-Fi роутер, Название роутера, Пакет каналов Amediateka</p>
 
-    <button class="button close-btn" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
-        <path stroke="#EF3024" stroke-width="2" d="m1 1 16 16M17 1 1 17" />
-      </svg>
-    </button>
+      <ul class="connection-request__price">
+        <li>Стоимость <strong>500 руб</strong></li>
+        <li>Аренда <strong>1294 руб/мес</strong></li>
+      </ul>
+
+      <div class="subtitle subtitle--two">Заполните простую форму и наши специалисты свяжутся с Вами в ближайшее время
+        для уточнения деталей</div>
+
+      <div class="form">
+        <form action="" method="post">
+          <div class="promo__form">
+
+            <div class="promo__form-item">
+              <label for="promo-form-name">Ваш телефон:</label>
+              <input id="promo-form-name" type="tel" name="user-phone" placeholder="Введите телефон" required="">
+            </div>
+
+            <div class="promo__form-item">
+              <label for="promo-form-tel">Представьтесь, пожалуйста:</label>
+              <input id="promo-form-tel" type="text" name="username" placeholder="Введите имя">
+            </div>
+
+            <div class="promo__form-item promo__form-item--check">
+              <input type="checkbox" name="user-consent" id="promo-form-consent" checked="">
+              <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных
+                  данных</a></label>
+            </div>
+
+            <button class="button" type="submit">
+              <span class="button_text">Отправить</span>
+              <span class="button_hover"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      </form>
+
+      <button class="button close-btn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+          <path stroke="#EF3024" stroke-width="2" d="m1 1 16 16M17 1 1 17" />
+        </svg>
+      </button>
+    </div>
   </section>
   <script>
     function showPicture() {

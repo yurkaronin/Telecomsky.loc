@@ -31,6 +31,16 @@
   right: 16px;
 }
 
+.modal .promo__form {
+  grid-template-columns: 1fr;
+}
+
+.modal .promo__form .button {
+  margin-left: initial;
+  padding: 15px 70px;
+  max-width: 100%;
+}
+
 @media (max-width: 760px) {
   .filter__flex {
     display: grid;

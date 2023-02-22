@@ -33,6 +33,10 @@
   grid-template-columns: 1fr 96px;
 }
 
+.modal .promo__form {
+  grid-template-columns:  1fr 1fr;
+}
+
 @media (max-width: 1023px) {
   .filter__flex {
     display: grid;

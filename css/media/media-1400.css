@@ -260,6 +260,10 @@
   gap: 16px;
 }
 
+.modal .promo__form-item--check {
+  grid-column: initial;
+}
+
 @media (max-width: 1250px) {
   .promo__details {
     padding: 16px 0;
