@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/button-add.js");
   includeFiles("./js/parts/channel-details.js");
   includeFiles("./js/parts/modals.js");
+  includeFiles("./js/parts/buttons-animate.js");
+
+
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
