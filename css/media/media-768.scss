@@ -47,6 +47,10 @@
   max-width: 100%;
 }
 
+.hero__video {
+  height: 70%;
+}
+
 @media (max-width: 760px) {
   .filter__flex {
     display: grid;
