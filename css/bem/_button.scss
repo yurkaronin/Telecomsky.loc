@@ -17,6 +17,11 @@
   overflow: hidden;
   transition: all 0.6s;
 
+  svg {
+    position: relative;
+    z-index: 11;
+  }
+
   span {
     pointer-events: none;
   }

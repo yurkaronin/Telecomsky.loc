@@ -163,6 +163,10 @@ li::marker {
   overflow: hidden;
   transition: all 0.6s;
 }
+.button svg {
+  position: relative;
+  z-index: 11;
+}
 .button span {
   pointer-events: none;
 }
@@ -2209,6 +2213,10 @@ input[type=radio].visually-hidden {
   flex-shrink: 0;
   stroke: #EF3024;
   transition: all 0.5s;
+}
+.modal .close-btn:hover {
+  background-color: #c70000;
+  border-color: #c70000;
 }
 .modal .close-btn:hover svg path {
   stroke: #ffffff;

@@ -59,11 +59,14 @@
           </div>
         </div>
 
+
+
       </div>
       <div class="header__bottom">
-        <a href="/" class="header__logo">
+        <a href="./" class="header__logo">
           <img src="./img/logo/1.png" alt="логотип компании Skytelecom" width="184" loading="lazy">
         </a>
+
 
         <nav class="header__navigation">
           <ul class="navigation-list">
@@ -89,8 +92,14 @@
         </nav>
 
         <div class="header__buttons">
-          <a class="button button--transparent" href="#"><span>Войти</span></a>
-          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <a class="button button--transparent" href="#">
+            <span class="button_text">Войти</span>
+            <span class="button_hover"></span>
+          </a>
+          <a class="button" href="#">
+            <span class="button_text">Подключить Skytelecom</span>
+            <span class="button_hover"></span>
+          </a>
           <button class="button button--menu" type="button">
             <span></span>
           </button>
@@ -148,10 +157,16 @@
         <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
         <ul class="mobile-nivigation__buttons">
           <li>
-            <a class="button button--transparent" href="#"><span>Вход</span></a>
+            <a class="button button--transparent" href="#">
+              <span class="button_text">Написать нам</span>
+              <span class="button_hover"></span>
+            </a>
           </li>
           <li>
-            <a class="button" href="#"><span>Подключить <span class="mob-hide">Skytelecom</span></span></a>
+            <a class="button" href="#">
+              <span class="button_text">Заказать звонок</span>
+              <span class="button_hover"></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -197,7 +212,8 @@
               пн-пт 9:00- 18:00</p>
 
             <div class="contacts__button">
-              <a class="button button--icon-left" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+              <a class="button button--icon-left" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24"
                   height="24" fill="none">
                   <g clip-path="url(#a)">
                     <path fill="#fff"
@@ -209,8 +225,11 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <span>WhatsApp</span></a>
-              <a class="button button--icon-left" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                <span class="button_text">WhatsApp</span>
+                <span class="button_hover"></span>
+                </a>
+              <a class="button button--icon-left" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25"
                   height="24" fill="none">
                   <g clip-path="url(#a)">
                     <path fill="#fff"
@@ -224,9 +243,14 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <span>Telegram</span></a>
+                <span class="button_text">Telegram</span>
+                <span class="button_hover"></span>
+                </a>
             </div>
-            <a href="#" class="button button--transparent"><span>Написать сообщение</span></a>
+            <a href="#" class="button button--transparent">
+              <span class="button_text">Написать сообщение</span>
+              <span class="button_hover"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -250,8 +274,7 @@
             </li>
           </ul>
           <ul class="navigation-list">
-            <li>
-              <a class="footer__navigation-link" href="#"><span>Акции</span></a>
+            <a class="footer__navigation-link" href="#"><span>Акции</span></a>
             </li>
             <li>
               <a class="footer__navigation-link" href="#"><span>О компании</span></a>
@@ -269,15 +292,16 @@
                 <a class="social-link social-link--whatsapp" href="#"><span>Написать WhatsApp</span></a>
               </li>
               <li>
-                <a class="social-link social-link--telegram" href="#"><span>Написать Telegram</span></a>
+                <a class="social-link social-link--telegram" href="#">
+                  <span class="button_text">Заказать звонок</span>
+                <span class="button_hover"></span><span>Написать Telegram</span></a>
               </li>
             </ul>
             <ul>
               <li>
                 <a href="#">Частые вопросы</a>
               </li>
-              <li>
-                <a href="#">Инструкции</a>
+              <li></li><a href="#">Инструкции</a>
               </li>
             </ul>
           </div>
@@ -286,10 +310,16 @@
           <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
           <ul class="footer__buttons">
             <li>
-              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+              <a class="button button--transparent button--white" href="#">
+                <span class="button_text">Написать нам</span>
+                <span class="button_hover"></span>
+              </a>
             </li>
             <li>
-              <a class="button" href="#"><span>Заказать звонок</span></a>
+              <a class="button" href="#">
+                <span class="button_text">Заказать звонок</span>
+                <span class="button_hover"></span>
+              </a>
             </li>
           </ul>
 
@@ -309,7 +339,8 @@
   <script src="./libs/swiper-bundle.min.js"></script>
 
   <!-- подключаем эту библиотеку только на странице с контактами  -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="./js/scripts.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
