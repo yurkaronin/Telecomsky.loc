@@ -198,7 +198,7 @@ li::marker {
 .button--ghost {
   border-color: #ffffff;
   background-color: #ffffff;
-  color: #EF3024;
+  color: #ef3024;
 }
 .button--slider {
   border-color: #ffffff;
@@ -251,15 +251,15 @@ li::marker {
 }
 .button--white-mod {
   background-color: #ffffff;
-  color: #EF3024;
+  color: #ef3024;
   border-color: #ffffff;
 }
 .button--big {
   padding: 15px 62px;
 }
 .button:hover {
-  border-color: #C70000;
-  background-color: #C70000;
+  border-color: #c70000;
+  background-color: #c70000;
   color: #ffffff;
 }
 .button:hover .button_hover {
