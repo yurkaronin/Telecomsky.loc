@@ -157,11 +157,30 @@ li::marker {
   border: 1px solid;
   border-color: #ef3024;
   max-width: max-content;
-  transition: all 0.3s;
   cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 .button span {
   pointer-events: none;
+}
+.button_text {
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+}
+.button_hover {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #c70000;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s, background-color 0.4s;
 }
 .button--transparent {
   background-color: transparent;
@@ -238,6 +257,11 @@ li::marker {
   border-color: #C70000;
   background-color: #C70000;
   color: #ffffff;
+}
+.button:hover .button_hover {
+  width: 1000px;
+  height: 1000px;
+  pointer-events: none;
 }
 
 .title {
@@ -2200,47 +2224,4 @@ input[type=radio].visually-hidden {
 .modal-show {
   display: block;
   animation: bounce 0.6s;
-}
-
-.btn {
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  display: block;
-  text-align: center;
-  padding: 12px 24px;
-  background-color: #ef3024;
-  border-radius: 24px;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
-  border: 1px solid;
-  border-color: #ef3024;
-  max-width: max-content;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-.btn_text {
-  position: relative;
-  z-index: 4;
-  pointer-events: none;
-}
-
-.btn:hover .btn_hover {
-  width: 1000px;
-  height: 1000px;
-}
-
-.btn .btn_hover {
-  position: absolute;
-  z-index: 2;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: #c70000;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s, background-color 0.4s;
 }

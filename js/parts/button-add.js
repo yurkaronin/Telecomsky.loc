@@ -10,5 +10,5 @@ for (let checkboxButton of checkboxButtons) {
       label.textContent = 'Добавить';
     }
   });
-}
+};
 

@@ -11,11 +11,34 @@
   border: 1px solid;
   border-color: #ef3024;
   max-width: max-content;
-  transition: all 0.3s;
   cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+
   span {
     pointer-events: none;
   }
+
+  &_text {
+    position: relative;
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  &_hover {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #c70000;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s, background-color 0.4s;
+  }
+
 
   &--transparent {
     background-color: transparent;
@@ -99,5 +122,11 @@
     border-color: #C70000;
     background-color: #C70000;
     color: #ffffff;
+
+    .button_hover {
+      width: 1000px;
+      height: 1000px;
+      pointer-events: none;
+    }
   }
 }

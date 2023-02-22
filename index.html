@@ -201,8 +201,11 @@
           <li><a href="./contacts.html">Контакты</a></li>
         </ol>
 
-        <button class="button call-modal" data-dialog-button="modal-1" type="button"><span>Вызов окна</span></button>
-
+        <button class="button call-modal" data-dialog-button="modal-1" type="button">
+          <span class="button_text">Вызов окна</span>
+          <span class="button_hover"></span>
+        </button>
+        <br>
         <a href="#" class="btn">
           <span class="btn_text">Наведите мышкой</span>
           <span class="btn_hover"></span>
@@ -375,11 +378,14 @@
       }, 1000);
     };
   </script>
+  
   <script src="./libs/smoothscroll.min.js"></script>
+  <script src="./js/scripts.js"></script>
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
     $(function () {
-      $(".btn").mouseover(function (e) {
+      $(".button").mouseover(function (e) {
         // положение элемента
         var pos = $(this).offset();
         var elem_left = pos.left;
@@ -387,14 +393,14 @@
         // положение курсора внутри элемента
         var Xinner = e.pageX - elem_left;
         var Yinner = e.pageY - elem_top;
-        $(this).find(".btn_hover").css({
+        $(this).find(".button_hover").css({
           "left": Xinner,
           "top": Yinner
         })
       });
     });
   </script>
-  <script src="./js/scripts.js"></script>
+
 </body>
 
 </html>

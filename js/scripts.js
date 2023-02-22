@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     headerChange();
   });
 
-
   // подключаем файлы тут
   includeFiles("./js/parts/mobile-menu-show.js");
   includeFiles("./js/parts/smoothscroll.js");
@@ -37,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/channel-details.js");
   includeFiles("./js/parts/modals.js");
 
-
-
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
   headerChange();
@@ -46,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('scroll', e => {
     headerChange();
   });
-
 
 });
 
