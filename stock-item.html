@@ -316,7 +316,24 @@
   <script src="./libs/swiper-bundle.min.js"></script>
 
   <script src="./js/scripts.js"></script>
-
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".button").mouseover(function (e) {
+        // положение элемента
+        var pos = $(this).offset();
+        var elem_left = pos.left;
+        var elem_top = pos.top;
+        // положение курсора внутри элемента
+        var Xinner = e.pageX - elem_left;
+        var Yinner = e.pageY - elem_top;
+        $(this).find(".button_hover").css({
+          "left": Xinner,
+          "top": Yinner
+        })
+      });
+    });
+  </script>
 </body>
 
 </html>
