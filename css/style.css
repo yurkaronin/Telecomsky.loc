@@ -161,7 +161,7 @@ li::marker {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.6s;
 }
 .button span {
   pointer-events: none;
@@ -180,7 +180,7 @@ li::marker {
   background: #c70000;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s, background-color 0.4s;
+  transition: width 0.6s, height 0.6s, color 0.3s, background-color 0.4s;
 }
 .button--transparent {
   background-color: transparent;
@@ -2199,7 +2199,7 @@ input[type=radio].visually-hidden {
   border-color: #ffffff;
   padding: 0;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -2207,13 +2207,12 @@ input[type=radio].visually-hidden {
 .modal .close-btn svg {
   pointer-events: none;
   flex-shrink: 0;
-}
-.modal .close-btn:hover {
-  background-color: #c70000;
-  border-color: #c70000;
+  stroke: #EF3024;
+  transition: all 0.5s;
 }
 .modal .close-btn:hover svg path {
   stroke: #ffffff;
+  transition: all 0.5s;
 }
 
 .overlay-show {

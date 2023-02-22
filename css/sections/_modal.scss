@@ -53,21 +53,24 @@
     border-color: #ffffff;
     padding: 0;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.5s;
     position: absolute;
     top: 16px;
     right: 16px;
     svg {
       pointer-events: none;
       flex-shrink: 0;
+      stroke: #EF3024;
+      transition: all 0.5s;
     }
     &:hover {
-      background-color: #c70000;
-      border-color: #c70000;
+      // background-color: #c70000;
+      // border-color: #c70000;
 
       svg {
         path {
           stroke: #ffffff;
+          transition: all 0.5s;
         }
       }
     }

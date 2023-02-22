@@ -115,8 +115,14 @@
         </nav>
 
         <div class="header__buttons">
-          <a class="button button--transparent" href="#"><span>Войти</span></a>
-          <a class="button" href="#"><span>Подключить Skytelecom</span></a>
+          <a class="button button--transparent" href="#">
+            <span class="button_text">Войти</span>
+            <span class="button_hover"></span>
+          </a>
+          <a class="button" href="#">
+            <span class="button_text">Подключить Skytelecom</span>
+            <span class="button_hover"></span>
+          </a>
           <button class="button button--menu" type="button">
             <span></span>
           </button>
@@ -174,10 +180,16 @@
         <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
         <ul class="mobile-nivigation__buttons">
           <li>
-            <a class="button button--transparent" href="#"><span>Написать нам</span></a>
+            <a class="button button--transparent" href="#">
+              <span class="button_text">Написать нам</span>
+              <span class="button_hover"></span>
+            </a>
           </li>
           <li>
-            <a class="button" href="#"><span>Заказать звонок</span></a>
+            <a class="button" href="#">
+              <span class="button_text">Заказать звонок</span>
+              <span class="button_hover"></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -233,6 +245,20 @@
             <li>что бы при клике на кнопку страничка непрокручивалась наверх - используй тег кнопки, вместо ссылки, или
               конструкцию типа такой <mark>&lt;a href=&quot;javascript:;&quot;&gt;My Link&lt;/a&gt;</mark></li>
           </ol>
+        </details>
+
+        <details onclick="showPicture()" class="pulsate">
+          <summary>Пояснения для Андрея (про анимацию на кнопках)</summary>
+          <p>В любой кнопке должна соблюдаться вот такая структура:</p>
+          <pre>
+            <code>
+              &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;
+                &lt;span class=&quot;btn_text&quot;&gt;Наведите мышкой&lt;/span&gt;
+                &lt;span class=&quot;btn_hover&quot;&gt;&lt;/span&gt;
+              &lt;/a&gt;
+            </code>
+          </pre>
+          <p>работает на базе небольшого кода с использованием JQuery. На чистом JS у меня проблемы с отслеживанием координат. Поэтому позаимствовал готовое решение.</p>
         </details>
 
         <div class="visually-hidden">
@@ -294,10 +320,16 @@
           <a class="phone phone--icon" href="tel:+78005111205">+7 800 511 12 05</a>
           <ul class="footer__buttons">
             <li>
-              <a class="button button--transparent button--white" href="#"><span>Написать нам</span></a>
+              <a class="button button--transparent button--white" href="#">
+                <span class="button_text">Написать нам</span>
+                <span class="button_hover"></span>
+              </a>
             </li>
             <li>
-              <a class="button" href="#"><span>Заказать звонок</span></a>
+              <a class="button" href="#">
+                <span class="button_text">Заказать звонок</span>
+                <span class="button_hover"></span>
+              </a>
             </li>
           </ul>
 
@@ -342,7 +374,10 @@
                 данных</a></label>
           </div>
 
-          <button class="button" type="submit"><span>Отправить</span></button>
+          <button class="button" type="submit">
+            <span class="button_text">Отправить</span>
+            <span class="button_hover"></span>
+          </button>
         </div>
       </form>
     </div>
@@ -378,7 +413,7 @@
       }, 1000);
     };
   </script>
-  
+
   <script src="./libs/smoothscroll.min.js"></script>
   <script src="./js/scripts.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
