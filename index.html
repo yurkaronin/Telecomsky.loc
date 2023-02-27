@@ -521,9 +521,7 @@
   <script src="./js/scripts.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
-    if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
-  // code that should not run in Safari
-  $(function () {
+    $(function () {
       $(".button").mouseover(function (e) {
         // положение элемента
         var pos = $(this).offset();
@@ -538,9 +536,6 @@
         })
       });
     });
-};
-
-    
   </script>
 
 </body>

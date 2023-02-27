@@ -4,14 +4,14 @@ if (document.querySelector('.slider-promo .swiper')) {
     slidesPerView: 3,
     spaceBetween: 32,
     grabCursor: true,
-    // autoHeight: true,
+    autoHeight: true,
     navigation: {
       nextEl: ".slider-promo .button--slider.next",
       prevEl: ".slider-promo .button--slider.prev",
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.1,
+        slidesPerView: 1.2,
         spaceBetween: 10,
       },
       600: {
@@ -30,15 +30,15 @@ if (document.querySelector('.rates .swiper')) {
     slidesPerView: 4,
     spaceBetween: 32,
     grabCursor: true,
+    autoHeight: true,
     // calculateHeight:true,
-    // autoHeight: true,
     navigation: {
       nextEl: ".rates .button--slider.next",
       prevEl: ".rates .button--slider.prev",
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.1,
+        slidesPerView: 1.2,
         spaceBetween: 10,
       },
       600: {
@@ -60,6 +60,7 @@ if (document.querySelector('.equips .swiper')) {
     slidesPerView: 4,
     spaceBetween: 32,
     grabCursor: true,
+    autoHeight: true,
     // calculateHeight:true,
     // autoHeight: true,
     navigation: {
@@ -68,7 +69,7 @@ if (document.querySelector('.equips .swiper')) {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.1,
+        slidesPerView: 1.2,
         spaceBetween: 10,
       },
       600: {

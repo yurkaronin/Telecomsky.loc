@@ -629,6 +629,10 @@ input[type=radio].visually-hidden {
   padding: 32px 0;
 }
 
+.swiper-autoheight .swiper-wrapper {
+  align-items: stretch;
+}
+
 .tariff-long-item {
   display: flex;
   align-items: center;
