@@ -120,7 +120,7 @@ a {
 :focus {
   outline-style: none;
   outline-width: 0px !important;
-  outline-color: none !important;
+  outline-color: transparent !important;
 }
 
 li::marker {
