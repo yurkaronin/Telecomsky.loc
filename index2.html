@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div class="filter__flex filter__flex--mod">
+
+    <input class="visually-hidden" type="radio" name="tarif-option" id="filter-all" value="Все" checked>
+    <label class="filter__button" for="filter-all">Все</label>
+
+    <input class="visually-hidden" type="radio" name="tarif-option" id="filter-place-apartment" value="Для квартиры">
+    <label class="filter__button" for="filter-place-apartment">Для квартиры</label>
+
+    <input class="visually-hidden" type="radio" name="tarif-option" id="filter-place-home" value="Для дома">
+    <label class="filter__button" for="filter-place-home">Для дома</label>
+
+    <input class="visually-hidden" type="radio" name="tarif-option" id="filter-television-off" value="Без телевидения">
+    <label class="filter__button" for="filter-television-off">Без телевидения</label>
+
+    <input class="visually-hidden" type="radio" name="tarif-option" id="filter-television-on" value="С телевидением">
+    <label class="filter__button" for="filter-television-on">С телевидением</label>
+
+
+    <a href="#" class="button button--fatty">
+      <span class="button_text">Смотреть все</span>
+      <span class="button_hover"></span>
+    </a>
+
+    <style>
+      .filter .filter__flex--mod {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 10px 0 !important;
+      }
+
+      .filter__flex--mod .filter__button {
+        margin-right: 8px;
+        background: #f7f8fb;
+      }
+
+      .filter__flex--mod .button {
+        padding: 10px 20px;
+        height: 40px;
+        min-width: 224px;
+        margin-left: 16px;
+      }
+
+
+      .filter input[type=radio]:checked+label {
+        background: #C70000;
+      }
+    </style>
+
+
+  </div>
+
+</body>
+
+</html>

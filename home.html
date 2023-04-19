@@ -287,35 +287,61 @@
       <!-- фильтр  -->
       <div class="filter">
         <div class="wrapper">
+
           <h2 class="title">Наши тарифы</h2>
 
           <form action="">
-            <div class="filter__flex">
-              <fieldset class="filter__group">
-                <legend class="visually-hidden">Место</legend>
-                <input class="visually-hidden" type="radio" name="place-option" id="filter-place-apartment"
-                  value="Для квартиры" checked>
-                <label class="filter__button" for="filter-place-apartment">Для квартиры</label>
 
-                <input class="visually-hidden" type="radio" name="place-option" id="filter-place-home" value="Для дома">
-                <label class="filter__button" for="filter-place-home">Для дома</label>
-              </fieldset>
+            <div class="filter__flex filter__flex--mod">
 
-              <fieldset class="filter__group filter__group--mod">
-                <legend class="visually-hidden">Телевидение</legend>
-                <input class="visually-hidden" type="radio" name="television-option" id="filter-television-off"
-                  value="Без телевидения" checked>
-                <label class="filter__button" for="filter-television-off">Без телевидения</label>
+              <input class="visually-hidden" type="radio" name="tarif-option" id="filter-all" value="Все" checked>
+              <label class="filter__button" for="filter-all">Все</label>
 
-                <input class="visually-hidden" type="radio" name="television-option" id="filter-television-on"
-                  value="С телевидением">
-                <label class="filter__button" for="filter-television-on">С телевидением</label>
-              </fieldset>
+              <input class="visually-hidden" type="radio" name="tarif-option" id="filter-place-apartment"
+                value="Для квартиры">
+              <label class="filter__button" for="filter-place-apartment">Для квартиры</label>
+
+              <input class="visually-hidden" type="radio" name="tarif-option" id="filter-place-home" value="Для дома">
+              <label class="filter__button" for="filter-place-home">Для дома</label>
+
+              <input class="visually-hidden" type="radio" name="tarif-option" id="filter-television-off"
+                value="Без телевидения">
+              <label class="filter__button" for="filter-television-off">Без телевидения</label>
+
+              <input class="visually-hidden" type="radio" name="tarif-option" id="filter-television-on"
+                value="С телевидением">
+              <label class="filter__button" for="filter-television-on">С телевидением</label>
+
 
               <a href="#" class="button button--fatty">
                 <span class="button_text">Смотреть все</span>
                 <span class="button_hover"></span>
               </a>
+
+              <style>
+                .filter .filter__flex--mod {
+                  display: flex !important;
+                  flex-wrap: wrap;
+                  gap: 10px 0 !important;
+                }
+
+                .filter__flex--mod .filter__button {
+                  margin-right: 8px;
+                  background: #f7f8fb;
+                }
+
+                .filter__flex--mod .button {
+                  padding: 10px 20px;
+                  height: 40px;
+                  min-width: 224px;
+                  margin-left: 16px;
+                }
+
+
+                .filter input[type=radio]:checked+label {
+                  background: #C70000;
+                }
+              </style>
 
 
             </div>
@@ -454,7 +480,7 @@
                 </div>
 
                 <button class="button" type="submit"> <span class="button_text">Отправить</span>
-<span class="button_hover"></span></button>
+                  <span class="button_hover"></span></button>
               </div>
             </form>
           </div>
@@ -483,7 +509,7 @@
               </fieldset>
 
               <a href="#" class="button button--fatty"> <span class="button_text">Смотреть все</span>
-<span class="button_hover"></span></a>
+                <span class="button_hover"></span></a>
 
             </div>
           </form>
